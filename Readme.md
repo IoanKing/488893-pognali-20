@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Суслов](https://up.htmlacademy.ru/adaptive/20/user/488893).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко](https://up.htmlacademy.ru/adaptive/20/user/66243).
 
 ---
 
