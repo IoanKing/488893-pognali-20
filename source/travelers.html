@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__logo logo">
+        <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
+      </div>
+      <nav class="page-header__nav main-nav site-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item">
+            <a  class="site-nav__link" href="">О сервисе</a>
+          </li>
+          <li class="site-nav__item">
+            <a  class="site-nav__link" href="">Направления</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__auth auth">
+        <a class="auth__btn btn" href="">Авторизация</a>
+        <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
+        <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="page-header__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page-content">
+      <h2 class="page-content__title">Попутчики</h2>
+      <section class="page-content__peoples">
+        <article class="people-cart">
+          <div class="people-cart__main-info">
+            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+            <p class="people-cart__user-name">Таня Фирсова</p>
+          </div>
+          <div class="people-cart__likes likes">
+            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+            <p class="likes__counts">1,5 М</p>
+          </div>
+          <div class="people-cart__hashtags">
+            <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+          <div class="people-cart__countries">
+            <p class="people-cart__text">хочет посетить:</p>
+            <ul class="flag-list">
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Шри-ланки">
+                <p class="flag-list__title">Шри-ланка</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланда">
+                <p class="flag-list__title">Тайланд</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Сейшилы">
+                <p class="flag-list__title">Сейшилы</p>
+              </li>
+            </ul>
+          </div>
+          <div class="people-cart__transports">
+            <p class="people-cart__text">транспорт:</p>
+            <ul class="transports-list">
+              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span class="visually-hidden">By plane</span></li>
+              <li class="transports-list__item transports-list--car"><span class="visually-hidden">By car</span></li>
+              <li class="transports-list__item transports-list--bike"><span class="visually-hidden">By bike</span></li>
+              <li class="transports-list__item transports-list--foot"><span class="visually-hidden">On foot</span></li>
+            </ul>
+          </div>
+          <div class="people-cart__leveling">
+            <p class="people-cart__text">левел:</p>
+            <p class="people-cart__level">99</p>
+          </div>
+        </article>
+        <article class="people-cart">
+          <div class="people-cart__main-info">
+            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+            <p class="people-cart__user-name">Петя Демин</p>
+          </div>
+          <div class="people-cart__likes likes">
+            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+            <p class="likes__counts">1500</p>
+          </div>
+          <div class="people-cart__hashtags">
+            <p>#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+          <div class="people-cart__countries">
+            <p class="people-cart__text">хочет посетить:</p>
+            <ul class="flag-list">
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Бельгия">
+                <p class="flag-list__title">Бельгия</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехия">
+                <p class="flag-list__title">Чехия</p>
+              </li>
+            </ul>
+          </div>
+          <div class="people-cart__transports">
+            <p class="people-cart__text">транспорт:</p>
+            <ul class="transports-list">
+              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span class="visually-hidden">By plane</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list--car"><span class="visually-hidden">By car</span></li>
+              <li class="transports-list__item transports-list--bike"><span class="visually-hidden">By bike</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list--foot"><span class="visually-hidden">On foot</span></li>
+            </ul>
+          </div>
+          <div class="people-cart__leveling">
+            <p class="people-cart__text">левел:</p>
+            <p class="people-cart__level">80</p>
+          </div>
+        </article>
+        <article class="people-cart">
+          <div class="people-cart__main-info">
+            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+            <p class="people-cart__user-name">Марк Смолов</p>
+          </div>
+          <div class="people-cart__likes likes">
+            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+            <p class="likes__counts">150</p>
+          </div>
+          <div class="people-cart__hashtags">
+            <p>#рэп #тату #хайпбист #кроссовки #суприм</p>
+          </div>
+          <div class="people-cart__countries">
+            <p class="people-cart__text">хочет посетить:</p>
+            <ul class="flag-list">
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг США">
+                <p class="flag-list__title">США</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Австралия">
+                <p class="flag-list__title">Австралия</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Доминика">
+                <p class="flag-list__title">Доминика</p>
+              </li>
+            </ul>
+          </div>
+          <div class="people-cart__transports">
+            <p class="people-cart__text">транспорт:</p>
+            <ul class="transports-list">
+              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span class="visually-hidden">By plane</span></li>
+              <li class="transports-list__item transports-list--car"><span class="visually-hidden">By car</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list--bike"><span class="visually-hidden">By bike</span></li>
+              <li class="transports-list__item transports-list--foot"><span class="visually-hidden">On foot</span></li>
+            </ul>
+          </div>
+          <div class="people-cart__leveling">
+            <p class="people-cart__text">левел:</p>
+            <p class="people-cart__level">25</p>
+          </div>
+        </article>
+        <article class="people-cart">
+          <div class="people-cart__main-info">
+            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+            <p class="people-cart__user-name">Лариса Роговая</p>
+          </div>
+          <div class="people-cart__likes likes">
+            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+            <p class="likes__counts">23</p>
+          </div>
+          <div class="people-cart__hashtags">
+            <p>#образование #карьера #учеба #линкедин</p>
+          </div>
+          <div class="people-cart__countries">
+            <p class="people-cart__text">хочет посетить:</p>
+            <ul class="flag-list">
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Великобритания">
+                <p class="flag-list__title">Великобритания</p>
+              </li>
+              <li class="flag-list__item">
+                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Германия">
+                <p class="flag-list__title">Германия</p>
+              </li>
+            </ul>
+          </div>
+          <div class="people-cart__transports">
+            <p class="people-cart__text">транспорт:</p>
+            <ul class="transports-list">
+              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span class="visually-hidden">By plane</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list--car"><span class="visually-hidden">By car</span></li>
+              <li class="transports-list__item transports-list--bike"><span class="visually-hidden">By bike</span></li>
+              <li class="transports-list__item transports-list--foot"><span class="visually-hidden">On foot</span></li>
+            </ul>
+          </div>
+          <div class="people-cart__leveling">
+            <p class="people-cart__text">левел:</p>
+            <p class="people-cart__level">50</p>
+          </div>
+        </article>
+        <button class="cart__link button" type="button">Показать еще</button>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--back slider__toggle--current" type="button">Back</button>
+          <button class="slider__toggle slider__toggle--next" type="button">Next</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo logo">
+        <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
+      </div>
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__devs devs">
+        <p class="devs__text">Разработано</p>
+        <img class="devs__logo" src="" alt="Логотип HTMLAcademy" width="27" height="33">
+      </div>
+    </footer>
+  </body>
+</html>
