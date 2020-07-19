@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body class="page">
-    <header class="page-header">
-      <a class="page-header__logo logo" href="">
-        <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <a class="page-header__logo logo" href="">
+      <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
+    </a>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">О сервисе</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">Направления</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__auth auth">
+      <a class="auth__btn btn" href="">Авторизация</a>
+      <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </div>
+    <div class="page-header__social">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="">Vkontakte</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1 class="page-content__title">Направления</h1>
+    <section class="page-content__user-cart">
+      <!-- здесь будет карточка пользователя -->
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo logo" href="">
+      <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
+    </a>
+    <div class="page-footer__social">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="">Vkontakte</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__devs devs">
+      <p class="devs__text">Разработано</p>
+      <a class="devs__logo" href="">
+        <img class="devs__img" src="https://via.placeholder.com/27x33" alt="Логотип HTMLAcademy" width="27" height="33">
       </a>
-      <nav class="page-header__nav main-nav site-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a  class="site-nav__link" href="">О сервисе</a>
-          </li>
-          <li class="site-nav__item">
-            <a  class="site-nav__link" href="">Направления</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="">Попутчики</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__auth auth">
-        <a class="auth__btn btn" href="">Авторизация</a>
-        <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
-        <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </div>
-      <div class="page-header__social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="page-content">
-      <h2 class="page-content__title">Направления</h2>
-      <section class="page-content__user-cart">
-        <!-- здесь будет карточка пользователя -->
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo logo" href="">
-        <img class="logo__img" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
-      </a>
-      <div class="page-footer__social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__devs devs">
-        <p class="devs__text">Разработано</p>
-        <a class="devs__logo" href="">
-          <img class="devs__img" src="https://via.placeholder.com/27x33" alt="Логотип HTMLAcademy" width="27" height="33">
-        </a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
