@@ -26,7 +26,7 @@
         </ul>
       </nav>
       <div class="page-header__auth auth">
-        <a class="auth__btn btn" href="">Авторизация</a>
+        <a class="auth__button button" href="">Авторизация</a>
         <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
         <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
@@ -48,7 +48,7 @@
       <section class="page-content__promo promo">
         <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
         <div class="promo__auth auth">
-          <a class="auth__btn btn" href="">Авторизация</a>
+          <a class="auth__button button" href="">Авторизация</a>
           <a class="auth__phone" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
           <a class="auth__mail" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
         </div>
@@ -186,12 +186,51 @@
           </li>
         </ul>
         <a class="rates__link button" href="">Показать тарифы для бизнеса</a>
+        <section class="rates__popup rates-bussiness popup">
+          <h3 class="rates-bussiness__title">Бизнес-тарифы</h3>
+          <ul class="rates-bussiness__conditions conditions-list">
+            <li class="conditions-list__item">
+              <dt>Реклама у блогера</dt>
+              <dd>300 000 руб./пост</dd>
+            </li>
+            <li class="conditions-list__item">
+              <dt>Накрутка у подписчиков</dt>
+              <dd>от 1 руб./шт</dd>
+            </li>
+            <li class="conditions-list__item">
+              <dt>Лайки от ботов</dt>
+              <dd>от 20 коп./лайк</dd>
+            </li>
+            <li class="conditions-list__item">
+              <dt>Ваш продакт-плейсмент</dt>
+              <dd>Индивидуально</dd>
+            </li>
+          </ul>
+          <button class="popup__close rates-bussiness__close" type="button">Закрыть окно</button>
+        </section>
       </section>
-      <section class="page-content__check-in">
-        <!-- Здесь будет секция с регистрацией-->
+      <section class="page-content__check-in check-in">
+        <h2 class="check-in__title">Заинтересовались?</h2>
+        <p class="check-in__text">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a class="check-in__link" href="">авторизуйтесь.</a></p>
+        <form class="check-in__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="check-in__input" type="email" name="email" placeholder="email@example.com">
+          <button class="button check-in__submit" type="submit"><span class="visually-hidden">Отправить</span></button>
+        </form>
+        <p class="check-in__text">Остались вопросы? <br>Мы с радостью на них ответим!</p>
+        <div class="check-in__contacts">
+          <a class="check-in__phone" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="check-in__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
       </section>
-      <section class="page-content__location">
-        <!-- Здесь будет секция с картой -->
+      <section class="page-content__location location">
+        <div class="location__pisition">
+          <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+          <a class="location__button button" href="">Проложить маршрут</a>
+        </div>
+        <div class="location__map">
+          <div class="location__point"><span class="visually-hidden">Мы здесь!</span></div>
+          <img class="location__img" src="https://via.placeholder.com/320x424" width="320" height="424" alt="Карта местоположения">
+        </div>
       </section>
     </main>
     <footer class="page-footer">
