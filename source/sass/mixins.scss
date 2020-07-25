@@ -1,0 +1,40 @@
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  @include reset-indents;
+  list-style: none;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+}
+
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+
+}
+
+@mixin basic-font {
+  font-family: $font-stack;
+  font-size: $font-basic-size;
+  line-height: $font-bise-line;
+}
+
+@mixin basic-wrapper {
+  padding: 0 25px;
+}
+
+@mixin font($size: 16px, $height: 20px, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin title($color: $special_orange) {
+  @include font(24px, 24px, 600);
+  color: $color;
+}

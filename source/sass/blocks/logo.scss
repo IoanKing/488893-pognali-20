@@ -1,0 +1,10 @@
+.logo {
+  display: inline-block;
+  @include reset-indents;
+  vertical-align: middle;
+}
+
+.logo__img {
+  width: 95px;
+  height: 15px;
+}

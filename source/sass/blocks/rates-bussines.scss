@@ -1,0 +1,40 @@
+.rates-bussiness {
+  width: 270px;
+  background-color: $basic_white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px 0 rgba($basic_blue_light, .14);
+}
+
+.rates-bussiness__wrapper {
+  padding: 34px 26px 0 25px;
+}
+
+.rates-bussiness__title {
+  @include reset-indents;
+  @include title;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.rates-bussiness__conditions {
+  margin-bottom: 34px;
+}
+
+.rates-bussiness__item {
+  border-color: rgba($basic_black, 0.05);
+}
+
+.rates-bussiness__close {
+  @include reset-indents;
+  @include reset-button;
+  @include font(16px, 24px, 600);
+  display: block;
+  width: 100%;
+  padding: 21px;
+  text-align: center;
+  background-color: $special_button;
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  font-family: inherit;
+  border-radius: 0 0 20px 20px;
+}

@@ -1,0 +1,29 @@
+.direction {
+  background-color: $basic_blue_lightest;
+  color: $special_grey;
+}
+
+.direction__wrapper {
+  padding: 71px 48px 60px 22px;
+}
+
+.direction__wrapper-external {
+  padding: 0 25px 34px;
+  border-radius: 0 0 25px 25px;
+}
+
+.direction__title {
+  @include reset-indents;
+  margin-bottom: 19px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $special_orange;
+}
+
+.direction__text {
+  @include reset-indents;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}

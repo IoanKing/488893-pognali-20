@@ -1,0 +1,33 @@
+.social-list {
+  @include reset-list;
+  padding: 40px 0 37px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-list__link {
+  @include reset-link;
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: $basic_yellow;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--facebook {
+    background-image: url("../../img/facebook.svg");
+    background-size: 12px;
+  }
+
+  &--vk {
+    background-image: url("../../img/vk.svg");
+    background-size: 22px;
+  }
+
+  &--instagram {
+    background-image: url("../../img/instagram.svg");
+    background-size: 17px;
+  }
+
+}

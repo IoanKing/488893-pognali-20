@@ -1,0 +1,20 @@
+.rates {
+  color: $special_grey;
+  padding-top: 25px;
+}
+
+.rates__wrapper {
+  padding: 37px 25px 36px 49px;
+}
+
+.rates__title {
+  @include reset-indents;
+  @include font(24px, 24px, 600);
+  color: $special_orange;
+}
+
+.rates__link {
+  @include reset-link;
+  color: $special-link;
+  @include font(16px, 16px, 600);
+}

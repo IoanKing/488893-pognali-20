@@ -20,3 +20,7 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.svg]
+indent_style = ignore
+indent_size = ignore

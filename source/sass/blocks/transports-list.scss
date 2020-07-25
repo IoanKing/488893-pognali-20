@@ -1,0 +1,22 @@
+.transports-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.transports-list__item {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $basic_blue_gray;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    background-color: $basic_purplish_blue;
+  }
+}
