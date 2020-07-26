@@ -1,0 +1,36 @@
+.travelers {
+  padding-top: 25px;
+}
+
+.travelers__wrapper {
+  padding: 71px 30px 60px 22px;
+}
+
+.travelers__wrapper-external {
+  padding: 0 25px 34px;
+  border-radius: 0 0 25px 25px;
+}
+
+.travelers__title {
+  @include reset-indents;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $special_orange;
+}
+
+.travelers__text {
+  @include reset-indents;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.travelers__note {
+  @include reset-indents;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}

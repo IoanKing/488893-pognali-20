@@ -1,0 +1,6 @@
+.page {
+  @include reset-indents;
+  @include basic-font;
+  background-color: $basic_blue_lightest;
+  color: $basic_blue_dark;
+}

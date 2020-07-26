@@ -1,0 +1,31 @@
+.cartflag-list {
+  @include reset-list;
+  width: 100%;
+}
+
+.cartflag-list__item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cartflag-list__img {
+  margin-right: 14px;
+}
+
+.cartflag-list__title {
+  @include reset-indents;
+  @include font(15px, 16px, 500);
+  text-transform: uppercase;
+  color: $basic_blue_light;
+}
+
+

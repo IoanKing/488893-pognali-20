@@ -1,0 +1,57 @@
+.conditions-list {
+  @include reset-list;
+}
+
+.conditions-list__item {
+  position: relative;
+  padding: 7px 0;
+  border-top: 1px solid $special-line;
+
+  &--numbered {
+    counter-increment: conditions;
+    width: 200px;
+
+    &::before {
+      content: counter(conditions);
+      position: absolute;
+      top: 4px;
+      right: -46px;
+      padding: 8px 12px;
+      border-radius: 25px;
+      @include font(16px, 16px, 400);
+      color: $basic-white;
+    }
+
+    &:nth-child(1)::before {
+      background-color: $special_orange;
+    }
+
+    &:nth-child(2)::before {
+      background-color: $special_yellow_dark;
+    }
+
+    &:nth-child(3)::before {
+      background-color: $basic_yellow;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $special-line;
+  }
+}
+
+.conditions-list__description {
+  @include reset-indents;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  @include font(16px, 16px, 300);
+  color: $special_grey;
+}
+
+.conditions-list__price {
+  @include reset-indents;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  @include font(16px, 16px, 300);
+  color: $special_grey;
+}

@@ -1,0 +1,43 @@
+.slider__button {
+  @include reset-button;
+  @include font(17px, 30px, 600);
+  color: $basic_blue_light;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  padding-left: 33px;
+
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 18px;
+  background-image: url("../../img/show-more-plus.svg");
+}
+
+.slider__toggles {
+  width: 100%;
+  display: flex;
+}
+
+.slider__toggle {
+  @include reset-button;
+  background-color: $basic_white;
+  flex-basis: 50%;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 20px 13px;
+  background-position: center;
+
+  &--back {
+    border-right: 1px solid $basic_blue_lightest;
+    border-radius: 20px 0 0 20px;
+    background-image: url("../../img/triangle-arrow-left.svg");
+  }
+
+  &--next {
+    border-right: 1px solid $basic_blue_lightest;
+    border-radius: 0 20px 20px 0;
+    background-image: url("../../img/triangle-arrow-right.svg");
+  }
+}

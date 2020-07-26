@@ -1,0 +1,35 @@
+.about {
+  background-color: $basic_blue_dark;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 292px;
+  background-position: center center;
+}
+
+.about__wrapper {
+  padding: 33px 35px 82px 22px;
+}
+
+.about__title {
+  @include reset-indents;
+  margin-bottom: 19px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $special_orange;
+}
+
+.about__text {
+  @include reset-indents;
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.about__note {
+  @include reset-indents;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+.flag-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flag-list__item {
+  display: block;
+  width: 35px;
+  height: 25px;
+  background-color: $basic_blue_gray;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

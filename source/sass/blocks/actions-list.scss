@@ -1,0 +1,46 @@
+.actions-list {
+  @include reset-list;
+}
+
+.actions-list__item {
+  counter-increment: section;
+  position: relative;
+  padding: 22px 21px 76px 24px;
+  margin-top: -56px;
+  border-radius: 10px;
+  color: $basic_blue;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+
+  &:nth-child(1) {
+    background-color: $special_orange;
+    margin-top: 0px;
+  }
+
+  &:nth-child(2) {
+    background-color: $special_orange-2;
+  }
+
+  &:nth-child(3) {
+    background-color: $special_yellow_dark;
+  }
+
+  &:nth-child(4) {
+    background-color: $basic_yellow;
+    padding-bottom: 24px;
+  }
+
+  &::before {
+    content: counter(section);
+    position: absolute;
+    right: 21px;
+    color: $basic-white;
+  }
+}
+
+.actions-list__text {
+  display: inline-block;
+  max-width: 143px;
+  vertical-align: middle;
+}

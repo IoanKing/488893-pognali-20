@@ -1,0 +1,42 @@
+.check-in {
+  color: $basic_white;
+  padding-top: 25px;
+  padding-bottom: 28px;
+}
+
+.check-in__wrapper {
+  padding: 71px 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-in__title {
+  @include reset-indents;
+  @include font(24px, 24px, 600);
+  padding-bottom: 15px;
+  text-align: center;
+  color: $special_orange;
+}
+
+.check-in__text {
+  @include font(16px, 22px, 300);
+  width: 215px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.check-in__link {
+  color: $basic_yellow;
+  @include reset-link;
+  border-bottom: 1px solid
+}
+
+.check-in__phone,
+.check-in__mail {
+  @include font(16px, 22px, 600);
+  @include reset-link;
+  padding-left: 61px;
+  color: $basic_yellow;
+  text-transform: uppercase;
+}
