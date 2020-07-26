@@ -1,0 +1,20 @@
+.likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.likes__icon {
+  @include reset-button;
+  width: 31px;
+  height: 31px;
+  margin-right: 7px;
+  background-color: $special_gray_light;
+  border-radius: 50%;
+}
+
+.likes__counts {
+  @include reset-indents;
+  @include font(14px, 16px, 600);
+  color: $basic_blue;
+}

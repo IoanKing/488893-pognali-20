@@ -256,36 +256,34 @@
       </form>
     </section>
     <section class="page-content__peoples peoples">
-      <div class="slider container">
+      <div class="peoples__wrapper slider container">
         <article class="slider__item people-cart">
-          <div class="people-cart__main-info">
-            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+          <div class="people-cart__user-info">
+            <img class="people-cart__avatar" src="../img/firsova-mobile@1x.jpg" alt="Аватар" width="70" height="70">
             <p class="people-cart__user-name">Таня Фирсова</p>
-          </div>
-          <div class="people-cart__likes likes">
-            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-            <p class="likes__counts">1,5 М</p>
-          </div>
-          <div class="people-cart__hashtags">
-            <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="people-cart__likes likes">
+              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+              <p class="likes__counts">1,5 М</p>
+            </div>
+            <p class="people-cart__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
           </div>
           <div class="people-cart__countries">
             <p class="people-cart__text">хочет посетить:</p>
-            <ul class="flag-list">
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+            <ul class="people-cart__cartflag cartflag-list">
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
                   alt="Флаг Шри-ланки">
-                <p class="flag-list__title">Шри-ланка</p>
+                <p class="cartflag-list__title">Шри-ланка</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
                   alt="Флаг Тайланда">
-                <p class="flag-list__title">Тайланд</p>
+                <p class="cartflag-list__title">Тайланд</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
                   alt="Флаг Сейшилы">
-                <p class="flag-list__title">Сейшилы</p>
+                <p class="cartflag-list__title">Сейшилы</p>
               </li>
             </ul>
           </div>
@@ -299,36 +297,38 @@
               <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
             </ul>
           </div>
-          <div class="people-cart__leveling">
+          <div class="people-cart__stat">
             <p class="people-cart__text">левел:</p>
-            <p class="people-cart__level">99</p>
+            <div class="people-cart__level level">
+              <span class="level__number">99</span>
+            </div>
           </div>
-          <a class="people-cart__button button" href="">Позвать!</a>
+          <div class="people-cart__calling">
+            <a class="people-cart__button" href="">Позвать!</a>
+          </div>
         </article>
         <article class="slider__item people-cart">
-          <div class="people-cart__main-info">
-            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+          <div class="people-cart__user-info">
+            <img class="people-cart__avatar" src="../img/demin-mobile@1x.jpg" alt="Аватар" width="70" height="70">
             <p class="people-cart__user-name">Петя Демин</p>
-          </div>
-          <div class="people-cart__likes likes">
-            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-            <p class="likes__counts">1500</p>
-          </div>
-          <div class="people-cart__hashtags">
-            <p>#бургер #бар #футбол #концерт #крафт</p>
+            <div class="people-cart__likes likes">
+              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+              <p class="likes__counts">1500</p>
+            </div>
+            <p class="people-cart__hashtags">#бургер #бар #футбол #концерт #крафт</p>
           </div>
           <div class="people-cart__countries">
             <p class="people-cart__text">хочет посетить:</p>
-            <ul class="flag-list">
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Бельгия">
-                <p class="flag-list__title">Бельгия</p>
+            <ul class="people-cart__cartflag cartflag-list">
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Бельгии">
+                <p class="cartflag-list__title">Бельгия</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Чехия">
-                <p class="flag-list__title">Чехия</p>
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Чехии">
+                <p class="cartflag-list__title">Чехия</p>
               </li>
             </ul>
           </div>
@@ -337,47 +337,48 @@
             <ul class="transports-list">
               <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
                   class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--car"><span
-                  class="visually-hidden">By car</span></li>
+              <li class="transports-list__item  transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
               <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--foot"><span
-                  class="visually-hidden">On foot</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
             </ul>
           </div>
-          <div class="people-cart__leveling">
+          <div class="people-cart__stat">
             <p class="people-cart__text">левел:</p>
-            <p class="people-cart__level">80</p>
+            <div class="people-cart__level level">
+              <span class="level__number">80</span>
+            </div>
           </div>
-          <a class="people-cart__button button" href="">Позвать!</a>
+          <div class="people-cart__calling">
+            <a class="people-cart__button" href="">Позвать!</a>
+          </div>
         </article>
         <article class="slider__item people-cart">
-          <div class="people-cart__main-info">
-            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+          <div class="people-cart__user-info">
+            <img class="people-cart__avatar" src="../img/smolov-mobile@1x.jpg" alt="Аватар" width="70" height="70">
             <p class="people-cart__user-name">Марк Смолов</p>
-          </div>
-          <div class="people-cart__likes likes">
-            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-            <p class="likes__counts">150</p>
-          </div>
-          <div class="people-cart__hashtags">
-            <p>#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="people-cart__likes likes">
+              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+              <p class="likes__counts">170</p>
+            </div>
+            <p class="people-cart__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
           </div>
           <div class="people-cart__countries">
             <p class="people-cart__text">хочет посетить:</p>
-            <ul class="flag-list">
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг США">
-                <p class="flag-list__title">США</p>
+            <ul class="people-cart__cartflag cartflag-list">
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг США">
+                <p class="cartflag-list__title">США</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Австралия">
-                <p class="flag-list__title">Австралия</p>
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Австралии">
+                <p class="cartflag-list__title">Австралия</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Доминика">
-                <p class="flag-list__title">Доминика</p>
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Доминиканы">
+                <p class="cartflag-list__title">Доминикана</p>
               </li>
             </ul>
           </div>
@@ -387,41 +388,42 @@
               <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
                   class="visually-hidden">By plane</span></li>
               <li class="transports-list__item transports-list__item--car"><span class="visually-hidden">By car</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--bike"><span
-                  class="visually-hidden">By bike</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
               <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
             </ul>
           </div>
-          <div class="people-cart__leveling">
+          <div class="people-cart__stat">
             <p class="people-cart__text">левел:</p>
-            <p class="people-cart__level">25</p>
+            <div class="people-cart__level level">
+              <span class="level__number">25</span>
+            </div>
           </div>
-          <a class="people-cart__button button" href="">Позвать!</a>
+          <div class="people-cart__calling">
+            <a class="people-cart__button" href="">Позвать!</a>
+          </div>
         </article>
         <article class="slider__item people-cart">
-          <div class="people-cart__main-info">
-            <img class="people-cart__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
+          <div class="people-cart__user-info">
+            <img class="people-cart__avatar" src="../img/rogovaya-mobile@1x.jpg" alt="Аватар" width="70" height="70">
             <p class="people-cart__user-name">Лариса Роговая</p>
-          </div>
-          <div class="people-cart__likes likes">
-            <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-            <p class="likes__counts">23</p>
-          </div>
-          <div class="people-cart__hashtags">
-            <p>#образование #карьера #учеба #линкедин</p>
+            <div class="people-cart__likes likes">
+              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+              <p class="likes__counts">23</p>
+            </div>
+            <p class="people-cart__hashtags">#образование #карьера #учеба #линкедин</p>
           </div>
           <div class="people-cart__countries">
             <p class="people-cart__text">хочет посетить:</p>
-            <ul class="flag-list">
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Великобритания">
-                <p class="flag-list__title">Великобритания</p>
+            <ul class="people-cart__cartflag cartflag-list">
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Великобритании">
+                <p class="cartflag-list__title">Великобритания</p>
               </li>
-              <li class="flag-list__item">
-                <img class="flag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Германия">
-                <p class="flag-list__title">Германия</p>
+              <li class="cartflag-list__item">
+                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                  alt="Флаг Германии">
+                <p class="cartflag-list__title">Германия</p>
               </li>
             </ul>
           </div>
@@ -430,22 +432,26 @@
             <ul class="transports-list">
               <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
                   class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--car"><span
-                  class="visually-hidden">By car</span></li>
+              <li class="transports-list__item transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
               <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
               <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
             </ul>
           </div>
-          <div class="people-cart__leveling">
+          <div class="people-cart__stat">
             <p class="people-cart__text">левел:</p>
-            <p class="people-cart__level">50</p>
+            <div class="people-cart__level level">
+              <span class="level__number">50</span>
+            </div>
           </div>
-          <a class="people-cart__button button" href="">Позвать!</a>
+          <div class="people-cart__calling">
+            <a class="people-cart__button" href="">Позвать!</a>
+          </div>
         </article>
-        <button class="slider__button button" type="button">Показать еще</button>
+
+        <button class="slider__button" type="button">Показать еще</button>
         <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--back slider__toggle--current" type="button">Back</button>
-          <button class="slider__toggle slider__toggle--next" type="button">Next</button>
+          <button class="slider__toggle slider__toggle--back slider__toggle--current" type="button"><span class="visually-hidden">Back</span></button>
+          <button class="slider__toggle slider__toggle--next" type="button"><span class="visually-hidden">Next</span></button>
         </div>
       </div>
     </section>

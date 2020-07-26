@@ -1,5 +1,89 @@
 .people-cart {
+  padding-top: 15px;
+  padding-bottom: 22px;
   background-color: $basic_white;
   color: $special_grey;
   border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.people-cart__user-info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.people-cart__avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.people-cart__user-name {
+  flex-grow: 2;
+  @include reset-indents;
+  @include font(20px, 20px, 600);
+  color: $basic_blue_light;
+}
+
+.people-cart__likes {
+  position: relative;
+}
+
+.people-cart__hashtags {
+  width: 200px;
+  @include reset-indents;
+  @include font(15px, 18px, 400);
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.people-cart__countries {
+  width: 100%;
+}
+
+.people-cart__transports {
+  width: 195px;
+}
+
+.people-cart__leveling {
+  width: 62px;
+}
+
+.people-cart__text {
+  @include reset-indents;
+  @include font(15px, 16px, 400);
+}
+
+.people-cart .people-cart__cartflag {
+  padding: 18px 20px;
+}
+
+.people-cart__level {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.people-cart__level {
+  position: relative;
+  margin-top: 8px;
+}
+
+.people-cart__calling {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.people-cart__button {
+  position: relative;
+  display: block;
+  @include reset-link;
+  padding: 14px 20px;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  text-align: center;
+  @include font(17px, 17px, 600);
+  border-radius: 25px;
+  text-transform: uppercase;
 }

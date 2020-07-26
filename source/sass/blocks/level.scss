@@ -1,9 +1,15 @@
 .level {
-  display: block;
-  background-color: rgba($basic_black, 0.6);
+  display: inline-block;
+  background-color: transparent;
   padding: 12px 18px;
   border-radius: 50px;
-  color: $basic_white;
+  color: $basic_blue_light;
+  vertical-align: center;
+
+  &--dark {
+    background-color: rgba($basic_black, 0.6);
+    color: $basic_white;
+  }
 }
 
 .level__number {
