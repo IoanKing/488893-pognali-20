@@ -27,9 +27,8 @@
 }
 
 .check-in__link {
-  color: $basic_yellow;
   @include reset-link;
-  border-bottom: 1px solid
+  color: $basic_yellow;
 }
 
 .check-in__phone,

@@ -11,9 +11,9 @@
 }
 
 .plans-form__label {
-  display: flex;
   @include reset-indents;
   @include font(16px, 16px, 500);
+  display: flex;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   margin-bottom: 8px;
@@ -25,20 +25,20 @@
 }
 
 .plans-form__input {
+  @include font(14px, 14px, 500);
   width: 100%;
   border: 1px solid $special-border;
   border-radius: 4px;
   padding: 12px 14px 13px;
   text-align: center;
-  @include font(14px, 14px, 500);
   color: $basic_blue_light;
   margin-bottom: 20px;
 }
 
 .plans-form__checkbox {
+  @include font(15px, 15px, 400);
   display: flex;
   align-items: center;
-  @include font(15px, 15px, 400);
 
   &::before {
     content: "";
@@ -53,16 +53,16 @@
 }
 
 .plans-form__button {
-  position: relative;
   @include reset-button;
   @include reset-link;
+  @include font(17px, 17px, 600);
+  position: relative;
   display: block;
   width: 100%;
   padding: 14px 20px;
   background-color: $basic_yellow;
   color: $basic_blue;
   text-align: center;
-  @include font(17px, 17px, 600);
   border-radius: 25px;
   text-transform: uppercase;
 
@@ -87,11 +87,11 @@
 }
 
 .entertainment__text {
+  @include font(16px, 22px);
   width: 100%;
   padding: 10px 13px 10px 14px;
   border: 1px solid $special-border;
   border-radius: 4px;
-  @include font(16px, 22px);
   color: $special_grey;
 }
 

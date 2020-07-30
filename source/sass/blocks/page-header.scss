@@ -33,10 +33,10 @@
 }
 
 .page-header__title {
-  position: relative;
-  display: inline-block;
   @include reset-indents;
   @include title($basic_white);
+  position: relative;
+  display: inline-block;
 
   &::before {
     content: "";

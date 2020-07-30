@@ -12,13 +12,13 @@
     width: 200px;
 
     &::before {
+      @include font(16px, 16px, 400);
       content: counter(conditions);
       position: absolute;
       top: 4px;
       right: -46px;
       padding: 8px 12px;
       border-radius: 25px;
-      @include font(16px, 16px, 400);
       color: $basic-white;
     }
 
@@ -42,16 +42,16 @@
 
 .conditions-list__description {
   @include reset-indents;
+  @include font(16px, 16px, 300);
   margin-top: 6px;
   margin-bottom: 6px;
-  @include font(16px, 16px, 300);
   color: $special_grey;
 }
 
 .conditions-list__price {
   @include reset-indents;
+  @include font(16px, 16px, 300);
   margin-top: 6px;
   margin-bottom: 6px;
-  @include font(16px, 16px, 300);
   color: $special_grey;
 }
