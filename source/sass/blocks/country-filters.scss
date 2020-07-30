@@ -1,0 +1,39 @@
+.country-filters {
+  padding-top: 10px;
+  color: $basic_blue_dark;
+}
+
+.country-filters__wrapper {
+  padding: 33px 25px 17px;
+  display: flex;
+  align-items: center;
+}
+
+.country-filters__title {
+  @include reset-indents;
+  @include font(16px, 18px, 600);
+  text-transform: uppercase;
+  padding-left: 27px;
+
+  background-image: url("../../img/filter.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 15px;
+}
+
+.country-filters__toogle {
+  position: relative;
+  @include reset-button;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../../img/dots.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+  }
+}
