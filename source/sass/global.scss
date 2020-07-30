@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
-       url("../fonts/bloggersans-bold.woff") format("woff");
+  url("../fonts/bloggersans-bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-bolditalic.woff2") format("woff2"),
-       url("../fonts/bloggersans-bolditalic.woff") format("woff");
+  url("../fonts/bloggersans-bolditalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans.woff2") format("woff2"),
-       url("../fonts/bloggersans.woff") format("woff");
+  url("../fonts/bloggersans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-italic.woff2") format("woff2"),
-       url("../fonts/bloggersans-italic.woff") format("woff");
+  url("../fonts/bloggersans-italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-light.woff2") format("woff2"),
-       url("../fonts/bloggersans-light.woff") format("woff");
+  url("../fonts/bloggersans-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-lightitalic.woff2") format("woff2"),
-       url("../fonts/bloggersans-lightitalic.woff") format("woff");
+  url("../fonts/bloggersans-lightitalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-medium.woff2") format("woff2"),
-       url("../fonts/bloggersans-medium.woff") format("woff");
+  url("../fonts/bloggersans-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -64,13 +64,15 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-mediumitalic.woff2") format("woff2"),
-       url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+  url("../fonts/bloggersans-mediumitalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -91,7 +93,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
