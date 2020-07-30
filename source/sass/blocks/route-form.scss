@@ -1,7 +1,8 @@
 .route-form__button {
-  position: relative;
   @include reset-button;
   @include reset-link;
+  @include font(17px, 17px, 600);
+  position: relative;
   display: block;
   width: 100%;
   padding: 14px 20px;
@@ -9,7 +10,6 @@
   background-color: $basic_yellow;
   color: $basic_blue;
   text-align: center;
-  @include font(17px, 17px, 600);
   border-radius: 25px;
   text-transform: uppercase;
 

@@ -21,9 +21,9 @@
 }
 
 .people-cart__user-name {
-  flex-grow: 2;
   @include reset-indents;
   @include font(20px, 20px, 600);
+  flex-grow: 2;
   color: $basic_blue_light;
 }
 
@@ -32,9 +32,9 @@
 }
 
 .people-cart__hashtags {
-  width: 200px;
   @include reset-indents;
   @include font(15px, 18px, 400);
+  width: 200px;
   margin-top: 12px;
   margin-bottom: 15px;
 }
@@ -62,12 +62,9 @@
 
 .people-cart__level {
   display: inline-block;
-  vertical-align: top;
-}
-
-.people-cart__level {
   position: relative;
   margin-top: 8px;
+  vertical-align: top;
 }
 
 .people-cart__calling {
@@ -76,14 +73,14 @@
 }
 
 .people-cart__button {
+  @include reset-link;
+  @include font(17px, 17px, 600);
   position: relative;
   display: block;
-  @include reset-link;
   padding: 14px 20px;
   background-color: $basic_yellow;
   color: $basic_blue;
   text-align: center;
-  @include font(17px, 17px, 600);
   border-radius: 25px;
   text-transform: uppercase;
 }
