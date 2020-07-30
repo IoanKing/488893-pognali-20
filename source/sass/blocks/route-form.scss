@@ -1,0 +1,23 @@
+.route-form {
+
+}
+
+.route-form__button {
+  position: relative;
+  @include reset-button;
+  @include reset-link;
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 6px;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  text-align: center;
+  @include font(17px, 17px, 600);
+  border-radius: 25px;
+  text-transform: uppercase;
+
+  &--preview {
+    background-color: transparent;
+  }
+}

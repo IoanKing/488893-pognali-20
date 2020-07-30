@@ -56,633 +56,641 @@
     </div>
   </header>
   <main class="page-content">
-    <section class="page-content__user-cart user-cart">
-      <div class="user-cart__main-info">
-        <p class="user-cart__text">level</p>
-        <p class="user-cart__level">99</p>
-      </div>
-      <div class="user-cart__main-info main-info">
-        <img class="main-info__avatar" src="https://via.placeholder.com/70x70" alt="Аватар" width="70" height="70">
-      </div>
-      <form class="user-cart__add-photo" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="user-cart__button button" type="file">
-      </form>
-      <form class="user-cart__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="user-cart__hashtags">
-          <legend class="user-cart__legend">Теги</legend>
-          <textarea class="hashtags" rows="3">#бургер #бар #футбол #концерт
-            #крафт</textarea>
-        </fieldset>
-      </form>
-      <fieldset class="user-cart__transports">
-        <legend class="user-cart__legend">Транспорт</legend>
-        <div class="transports-list">
-          <input class="transports-list__item transports-list__item--active transports-list__item--plane"
-            type="checkbox" name="transport-plane" id="transport-plane">
-          <label class="visually-hidden" for="transport-plane">plane</label>
-          <input class="transports-list__item transports-list__item--car" type="checkbox" name="transport-car"
-            id="transport-car">
-          <label class="visually-hidden" for="transport-car">car</label>
-          <input class="transports-list__item transports-list__item--bike" type="checkbox" name="transport-bike"
-            id="transport-bike">
-          <label class="visually-hidden" for="transport-bike">bike</label>
-          <input class="transports-list__item transports-list__item--foot" type="checkbox" name="transport-foot"
-            id="transport-foot">
-          <label class="visually-hidden" for="transport-foot">foot</label>
+    <section class="page-content__user-cart user-cart container">
+      <div class="user-cart__wrapper">
+        <div class="user-cart__level level">
+          <span class="level__number">99</span>
+          <span class="level__text">level</span>
         </div>
-      </fieldset>
+        <div class="user-cart__user">
+          <img class="user-cart__avatar" src="img/demin-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+        </div>
+        <form class="user-cart__add-photo" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="user-cart__button" for="file">Сменить фото</label>
+          <input class="calendar-block__input visually-hidden" type="file" id="file">
+        </form>
+        <form class="user-cart__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="user-cart__fieldset user-cart__hashtags">
+            <legend class="user-cart__legend">Теги</legend>
+            <textarea class="user-cart__textarea" rows="2" >#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+          <fieldset class="user-cart__fieldset user-cart__transports">
+            <legend class="user-cart__legend">Транспорт</legend>
+            <div class="transports-list">
+              <input class="transports-list__item transports-list__item--active transports-list__item--plane"
+                type="checkbox" name="transport-plane" id="transport-plane">
+              <label class="visually-hidden" for="transport-plane">plane</label>
+              <input class="transports-list__item transports-list__item--car" type="checkbox" name="transport-car"
+                id="transport-car">
+              <label class="visually-hidden" for="transport-car">car</label>
+              <input class="transports-list__item transports-list__item--bike" type="checkbox" name="transport-bike"
+                id="transport-bike">
+              <label class="visually-hidden" for="transport-bike">bike</label>
+              <input class="transports-list__item transports-list__item--foot" type="checkbox" name="transport-foot"
+                id="transport-foot">
+              <label class="visually-hidden" for="transport-foot">foot</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </section>
     <section class="page-content__user-plans user-plans">
-      <div class="user-plans__item">
-        <p class="user-plans__route">1. Франция, Италия</p>
-        <p class="user-plans__travelers">3 попутчика</p>
-        <p class="user-plans__dates">26 мар — 29 мар</p>
-        <button class="user-plans__edit-button button" type="button">Изменить</button>
-      </div>
-      <div class="user-plans__item">
-        <p class="user-plans__route">2. Тайланд, Индонезия</p>
-        <p class="user-plans__travelers">1 попутчик</p>
-        <p class="user-plans__dates">1 июл — 15 июл</p>
-        <button class="user-plans__edit-button button" type="button">Изменить</button>
+      <div class="user-plans__wrapper container">
+        <h2 class="user-plans__title">Мои планы:</h2>
+        <div class="user-plans__item">
+          <p class="user-plans__route"><span class="user-plans__number">1.</span> Франция, Италия</p>
+          <p class="user-plans__travelers">3 попутчика</p>
+          <p class="user-plans__dates"><time datetime="2019-03-26 08:00">26 мар</time> — <time datetime="2019-03-29 23:59">29 мар</time></p>
+          <button class="user-plans__edit-button" type="button">Изменить</button>
+        </div>
+        <div class="user-plans__item">
+          <p class="user-plans__route"><span class="user-plans__number">2.</span> Тайланд, Индонезия</p>
+          <p class="user-plans__travelers">1 попутчик</p>
+          <p class="user-plans__dates"><time datetime="2019-07-01 08:00">1 июл</time> — <time datetime="2019-07-15 23:59">15 июл</time></p>
+          <button class="user-plans__edit-button" type="button">Изменить</button>
+        </div>
       </div>
     </section>
-    <section class="page-content__user-plans plans">
-      <h2 class="plans__title">Добавить план</h2>
-      <ul class="plans__points points">
-        <li class="points__item points__item--active"><span class="visually-hidden">1</span></li>
-        <li class="points__item"><span class="visually-hidden">2</span></li>
-        <li class="points__item"><span class="visually-hidden">3</span></li>
-      </ul>
-      <div class="slider plans__slider">
-        <section class="slider__item plans-step">
-          <h3 class="plans-step__title">Шаг 1. <br> Даты прибытия</h3>
-          <p class="plans-step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
-            позвать в поездку и ее предполагаемую длительность.</p>
-          <form class="plans-step__form plans-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="plans-form__fieldset">
-              <label class="plans-form__label" for="count-travelers">ищу попутчиков:<span
-                  class="plans-form__unit">чел.</span></label>
-              <input class="plans-form__input" type="number" name="count-travelers" id="count-travelers">
-              <label class="plans-form__label" for="count-duration">длительность:<span
-                  class="plans-form__unit">дн.</span></label>
-              <input class="plans-form__input" type="number" name="count-duration" id="count-duration">
-              <input class="plans-form__checkbox" type="checkbox" name="children" id="children">
-              <label class="plans-form__text" for="children">можно с детьми</label>
-            </fieldset>
-            <fieldset class="plans-form__fieldset calendar">
-              <div class="calendar__mouth period">
-                <button class="period__preview"><span class="visually-hidden">Назад</span></button>
-                <p class="period__current">Март 2019</p>
-                <button class="period__next"><span class="visually-hidden">Вперед</span></button>
-              </div>
-              <table class="plans-form__calandar calendar">
-                <thead class="calendar__head">
-                  <tr>
-                    <th class="calendar__days-week">П</th>
-                    <th class="calendar__days-week">В</th>
-                    <th class="calendar__days-week">С</th>
-                    <th class="calendar__days-week">Ч</th>
-                    <th class="calendar__days-week">П</th>
-                    <th class="calendar__days-week calendar__days-week--weekend">С</th>
-                    <th class="calendar__days-week alendar__days-week--weekend">В</th>
-                  </tr>
-                </thead>
-                <tbody class="calendar__body">
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>23</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>24</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>25</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>26</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>27</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>28</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>1</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>2</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>3</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>4</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>5</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>6</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>7</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>8</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>9</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>10</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>11</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>12</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>13</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>14</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>15</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>16</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>17</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>17</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>19</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>20</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>21</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>22</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>23</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>24</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" disabled>25</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox calendar__checkbox--current" type="checkbox" name="day" checked>26</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" checked>27</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day" checked>28</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">29</label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">30</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">31</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">1</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">2</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">3</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">4</label>
-                    </td>
-                    <td class="calendar__days">
-                      <label><input class="calendar__checkbox" type="checkbox" name="day">5</label>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </fieldset>
-            <button class="plans-form__button button" type="button">Следующий</button>
-          </form>
-        </section>
-        <section class="slider__item plans-step">
-          <h3 class="plans-step__title">Шаг 2. <br> Маршрут</h3>
-          <p class="plans-step__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-          <form class="plans-step__form route-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="route-form__item route-country">
-              <div class="route-country__select route-country__select--active">
-                <p class="route-country__value">Босния и герцеговина</p>
-                <div class="route-country__flag route-country__flag--BA"></div>
-              </div>
-              <div class="route-country__options select-options">
-                <h4 class="select-options__title">Выберите страну</h4>
-                <div class="select-options__country-group country-group">
-                  <table class="country-group__table">
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button country-group__button--active" type="button">A</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Б</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">В</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Г</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Д</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Е</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">З</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">И</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">К</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Л</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">М</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Н</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">О</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">П</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Р</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">С</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Т</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">У</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ф</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Х</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ч</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ш</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Э</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ю</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Я</button>
-                      </td>
-                    </tr>
-                  </table>
+    <section class="page-content__plans plans">
+      <div class="plans__wrapper container">
+        <h2 class="plans__title">Добавить план:</h2>
+        <ul class="plans__points points">
+          <li class="points__item points__item--active"><span class="visually-hidden">1</span></li>
+          <li class="points__item"><span class="visually-hidden">2</span></li>
+          <li class="points__item"><span class="visually-hidden">3</span></li>
+        </ul>
+        <div class="slider plans__slider">
+          <section class="slider__item plans-step">
+            <h3 class="plans-step__title">Шаг 1. <br> Даты прибытия</h3>
+            <p class="plans-step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
+              позвать в поездку и ее предполагаемую длительность.</p>
+            <form class="plans-step__form plans-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="plans-form__fieldset">
+                <label class="plans-form__label" for="count-travelers">ищу попутчиков:<span
+                    class="plans-form__unit">чел.</span></label>
+                <input class="plans-form__input" type="number" name="count-travelers" id="count-travelers" value="2">
+                <label class="plans-form__label" for="count-duration">длительность:<span
+                    class="plans-form__unit">дн.</span></label>
+                <input class="plans-form__input" type="number" name="count-duration" id="count-duration" value="3">
+                <input class="calendar-block__input visually-hidden" type="checkbox" name="children" id="children">
+                <label class="plans-form__checkbox" class="plans-form__text" for="children">Можно с детьми</label>
+              </fieldset>
+              <fieldset class="plans-form__fieldset calendar">
+                <div class="calendar__month">
+                  <button class="calendar__month-preview"><span class="visually-hidden">Назад</span></button>
+                  <p class="calendar__month-current">Март 2019</p>
+                  <button class="calendar__month-next"><span class="visually-hidden">Вперед</span></button>
                 </div>
-                <fieldset class="select-options__country countries-list">
-                  <input class="countries-list__radio" type="radio" id="country-AU" name="country">
-                  <label class="countries-list__name" for="country-AU">Австралия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AT" name="country">
-                  <label class="countries-list__name" for="country-AT">Австрия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
-                  <label class="countries-list__name" for="country-AZ">Азербайджан</label>
-                  <input class="countries-list__radio" type="radio" id="country-AL" name="country">
-                  <label class="countries-list__name" for="country-AL">Албания</label>
-                  <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
-                  <label class="countries-list__name" for="country-DZ">Алжир</label>
-                  <input class="countries-list__radio" type="radio" id="country-AO" name="country">
-                  <label class="countries-list__name" for="country-AO">Ангола</label>
-                  <input class="countries-list__radio" type="radio" id="country-AD" name="country">
-                  <label class="countries-list__name" for="country-AD">Андорра</label>
-                  <input class="countries-list__radio" type="radio" id="country-AG" name="country">
-                  <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
-                  <input class="countries-list__radio" type="radio" id="country-AR" name="country">
-                  <label class="countries-list__name" for="country-AR">Аргентина</label>
-                  <input class="countries-list__radio" type="radio" id="country-AM" name="country">
-                  <label class="countries-list__name" for="country-AM">Армения</label>
-                </fieldset>
-                <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-              </div>
-              <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
-            </div>
-            <div class="route-form__item route-country">
-              <div class="route-country__select route-country__select--active">
-                <p class="route-country__value">Чехия</p>
-                <div class="route-country__flag route-country__flag--CZ"></div>
-              </div>
-              <div class="route-country__options select-options">
-                <h4 class="select-options__title">Выберите страну</h4>
-                <div class="select-options__country-group country-group">
-                  <table class="country-group__table">
+                <table class="plans-form__calandar calendar-block" cellpadding
+=0 cellspacing=0>
+                  <thead class="calendar-block__head">
                     <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button country-group__button--active" type="button">A</button>
+                      <th class="calendar-block__days-week">П</th>
+                      <th class="calendar-block__days-week">В</th>
+                      <th class="calendar-block__days-week">С</th>
+                      <th class="calendar-block__days-week">Ч</th>
+                      <th class="calendar-block__days-week">П</th>
+                      <th class="calendar-block__days-week calendar-block__days-week--weekend">С</th>
+                      <th class="calendar-block__days-week calendar-block__days-week--weekend">В</th>
+                    </tr>
+                  </thead>
+                  <tbody class="calendar-block__body">
+                    <tr>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">23</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Б</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">24</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">В</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">25</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Г</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">26</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Д</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">27</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">28</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">1</label>
                       </td>
                     </tr>
                     <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Е</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">2</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">З</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">3</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">И</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">4</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">К</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">5</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Л</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">6</label>
                       </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">М</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">7</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Н</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">О</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">П</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Р</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">8</label>
                       </td>
                     </tr>
                     <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">С</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">9</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Т</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">10</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">У</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">11</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ф</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">12</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Х</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">13</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">14</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">15</label>
                       </td>
                     </tr>
                     <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ч</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">16</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ш</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">17</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Э</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">17</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ю</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">19</label>
                       </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Я</button>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">20</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">21</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">22</label>
                       </td>
                     </tr>
-                  </table>
+                    <tr>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">23</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">24</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" disabled><label class="calendar-block__checkbox">25</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" checked><label class="calendar-block__checkbox calendar-block__checkbox--current">26</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" checked><label class="calendar-block__checkbox">27</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day" checked><label class="calendar-block__checkbox">28</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">29</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">30</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">31</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">1</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">2</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">3</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">4</label>
+                      </td>
+                      <td class="calendar-block__days">
+                        <input class="calendar-block__input visually-hidden" type="checkbox" name="day"><label class="calendar-block__checkbox">5</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+              <button class="plans-form__button button" type="button">Следующий</button>
+            </form>
+          </section>
+          <section class="slider__item plans-step">
+            <h3 class="plans-step__title">Шаг 2. <br> Маршрут</h3>
+            <p class="plans-step__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            <form class="plans-step__form route-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="route-form__item route-country">
+                <div class="route-country__select route-country__select--active">
+                  <p class="route-country__value">Босния и герцеговина</p>
+                  <div class="route-country__flag route-country__flag--BA"></div>
                 </div>
-                <fieldset class="select-options__country countries-list">
-                  <input class="countries-list__radio" type="radio" id="country-AU" name="country">
-                  <label class="countries-list__name" for="country-AU">Австралия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AT" name="country">
-                  <label class="countries-list__name" for="country-AT">Австрия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
-                  <label class="countries-list__name" for="country-AZ">Азербайджан</label>
-                  <input class="countries-list__radio" type="radio" id="country-AL" name="country">
-                  <label class="countries-list__name" for="country-AL">Албания</label>
-                  <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
-                  <label class="countries-list__name" for="country-DZ">Алжир</label>
-                  <input class="countries-list__radio" type="radio" id="country-AO" name="country">
-                  <label class="countries-list__name" for="country-AO">Ангола</label>
-                  <input class="countries-list__radio" type="radio" id="country-AD" name="country">
-                  <label class="countries-list__name" for="country-AD">Андорра</label>
-                  <input class="countries-list__radio" type="radio" id="country-AG" name="country">
-                  <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
-                  <input class="countries-list__radio" type="radio" id="country-AR" name="country">
-                  <label class="countries-list__name" for="country-AR">Аргентина</label>
-                  <input class="countries-list__radio" type="radio" id="country-AM" name="country">
-                  <label class="countries-list__name" for="country-AM">Армения</label>
-                </fieldset>
-                <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-              </div>
-              <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
-            </div>
-            <div class="route-form__item route-country">
-              <div class="route-country__select">
-                <p class="route-country__value">Выберите страну</p>
-                <div class="route-country__flag"></div>
-              </div>
-              <div class="route-country__options select-options">
-                <h4 class="select-options__title">Выберите страну</h4>
-                <div class="select-options__country-group country-group">
-                  <table class="country-group__table">
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button country-group__button--active" type="button">A</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Б</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">В</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Г</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Д</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Е</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">З</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">И</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">К</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Л</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">М</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Н</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">О</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">П</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Р</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">С</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Т</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">У</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ф</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Х</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ч</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ш</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Э</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Ю</button>
-                      </td>
-                      <td class="country-group__item">
-                        <button class="country-group__button" type="button">Я</button>
-                      </td>
-                    </tr>
-                  </table>
+                <div class="route-country__options select-options">
+                  <h4 class="select-options__title">Выберите страну</h4>
+                  <div class="select-options__country-group country-group">
+                    <table class="country-group__table">
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button country-group__button--active" type="button">A</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Б</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">В</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Г</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Д</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Е</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">З</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">И</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">К</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Л</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">М</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Н</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">О</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">П</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Р</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">С</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Т</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">У</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ф</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Х</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ч</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ш</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Э</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ю</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Я</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <fieldset class="select-options__country countries-list">
+                    <input class="countries-list__radio" type="radio" id="country-AU" name="country">
+                    <label class="countries-list__name" for="country-AU">Австралия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AT" name="country">
+                    <label class="countries-list__name" for="country-AT">Австрия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
+                    <label class="countries-list__name" for="country-AZ">Азербайджан</label>
+                    <input class="countries-list__radio" type="radio" id="country-AL" name="country">
+                    <label class="countries-list__name" for="country-AL">Албания</label>
+                    <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
+                    <label class="countries-list__name" for="country-DZ">Алжир</label>
+                    <input class="countries-list__radio" type="radio" id="country-AO" name="country">
+                    <label class="countries-list__name" for="country-AO">Ангола</label>
+                    <input class="countries-list__radio" type="radio" id="country-AD" name="country">
+                    <label class="countries-list__name" for="country-AD">Андорра</label>
+                    <input class="countries-list__radio" type="radio" id="country-AG" name="country">
+                    <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
+                    <input class="countries-list__radio" type="radio" id="country-AR" name="country">
+                    <label class="countries-list__name" for="country-AR">Аргентина</label>
+                    <input class="countries-list__radio" type="radio" id="country-AM" name="country">
+                    <label class="countries-list__name" for="country-AM">Армения</label>
+                  </fieldset>
+                  <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
                 </div>
-                <fieldset class="select-options__country countries-list">
-                  <input class="countries-list__radio" type="radio" id="country-AU" name="country">
-                  <label class="countries-list__name" for="country-AU">Австралия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AT" name="country">
-                  <label class="countries-list__name" for="country-AT">Австрия</label>
-                  <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
-                  <label class="countries-list__name" for="country-AZ">Азербайджан</label>
-                  <input class="countries-list__radio" type="radio" id="country-AL" name="country">
-                  <label class="countries-list__name" for="country-AL">Албания</label>
-                  <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
-                  <label class="countries-list__name" for="country-DZ">Алжир</label>
-                  <input class="countries-list__radio" type="radio" id="country-AO" name="country">
-                  <label class="countries-list__name" for="country-AO">Ангола</label>
-                  <input class="countries-list__radio" type="radio" id="country-AD" name="country">
-                  <label class="countries-list__name" for="country-AD">Андорра</label>
-                  <input class="countries-list__radio" type="radio" id="country-AG" name="country">
-                  <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
-                  <input class="countries-list__radio" type="radio" id="country-AR" name="country">
-                  <label class="countries-list__name" for="country-AR">Аргентина</label>
-                  <input class="countries-list__radio" type="radio" id="country-AM" name="country">
-                  <label class="countries-list__name" for="country-AM">Армения</label>
-                </fieldset>
-                <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
               </div>
-              <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
-            </div>
-            <button class="route-form__add-item button" type="button">Добавить страну</button>
-            <button class="route-form__button button" type="button">Следующий</button>
-            <button class="route-form__button route-form__button--preview button" type="button">На шаг назад</button>
-          </form>
-        </section>
-        <section class="plans__item plans-step">
-          <h3 class="plans-step__title">Шаг 3. <br> Развлечения</h3>
-          <p class="plans-step__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <form class="plans-step__form plans-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="plans-form__entertainment entertainment">
-              <legend class="entertainment__title entertainment__title--BA">Босния и Герцеговина</legend>
-              <textarea class="entertainment__text" placeholder="План действий" rows="10"></textarea>
-            </fieldset>
-            <fieldset class="plans-form__entertainment entertainment">
-              <legend class="entertainment__title entertainment__title--CZ">Чехия</legend>
-              <textarea class="entertainment__text" placeholder="План действий" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            </fieldset>
-            <button class="plans-form__submit button" type="submit">Отправить</button>
-            <button class="plans-form__button plans-form__button--preview button" type="button">На шаг назад</button>
-          </form>
-        </section>
+              <div class="route-form__item route-country">
+                <div class="route-country__select route-country__select--active">
+                  <p class="route-country__value">Чехия</p>
+                  <div class="route-country__flag route-country__flag--CZ"></div>
+                </div>
+                <div class="route-country__options select-options">
+                  <h4 class="select-options__title">Выберите страну</h4>
+                  <div class="select-options__country-group country-group">
+                    <table class="country-group__table">
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button country-group__button--active" type="button">A</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Б</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">В</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Г</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Д</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Е</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">З</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">И</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">К</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Л</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">М</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Н</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">О</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">П</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Р</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">С</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Т</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">У</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ф</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Х</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ч</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ш</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Э</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ю</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Я</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <fieldset class="select-options__country countries-list">
+                    <input class="countries-list__radio" type="radio" id="country-AU" name="country">
+                    <label class="countries-list__name" for="country-AU">Австралия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AT" name="country">
+                    <label class="countries-list__name" for="country-AT">Австрия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
+                    <label class="countries-list__name" for="country-AZ">Азербайджан</label>
+                    <input class="countries-list__radio" type="radio" id="country-AL" name="country">
+                    <label class="countries-list__name" for="country-AL">Албания</label>
+                    <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
+                    <label class="countries-list__name" for="country-DZ">Алжир</label>
+                    <input class="countries-list__radio" type="radio" id="country-AO" name="country">
+                    <label class="countries-list__name" for="country-AO">Ангола</label>
+                    <input class="countries-list__radio" type="radio" id="country-AD" name="country">
+                    <label class="countries-list__name" for="country-AD">Андорра</label>
+                    <input class="countries-list__radio" type="radio" id="country-AG" name="country">
+                    <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
+                    <input class="countries-list__radio" type="radio" id="country-AR" name="country">
+                    <label class="countries-list__name" for="country-AR">Аргентина</label>
+                    <input class="countries-list__radio" type="radio" id="country-AM" name="country">
+                    <label class="countries-list__name" for="country-AM">Армения</label>
+                  </fieldset>
+                  <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                </div>
+                <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
+              </div>
+              <div class="route-form__item route-country">
+                <div class="route-country__select">
+                  <p class="route-country__value">Выберите страну</p>
+                  <div class="route-country__flag"></div>
+                </div>
+                <div class="route-country__options select-options">
+                  <h4 class="select-options__title">Выберите страну</h4>
+                  <div class="select-options__country-group country-group">
+                    <table class="country-group__table">
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button country-group__button--active" type="button">A</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Б</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">В</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Г</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Д</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Е</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">З</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">И</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">К</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Л</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">М</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Н</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">О</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">П</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Р</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">С</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Т</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">У</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ф</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Х</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ч</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ш</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Э</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Ю</button>
+                        </td>
+                        <td class="country-group__item">
+                          <button class="country-group__button" type="button">Я</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <fieldset class="select-options__country countries-list">
+                    <input class="countries-list__radio" type="radio" id="country-AU" name="country">
+                    <label class="countries-list__name" for="country-AU">Австралия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AT" name="country">
+                    <label class="countries-list__name" for="country-AT">Австрия</label>
+                    <input class="countries-list__radio" type="radio" id="country-AZ" name="country">
+                    <label class="countries-list__name" for="country-AZ">Азербайджан</label>
+                    <input class="countries-list__radio" type="radio" id="country-AL" name="country">
+                    <label class="countries-list__name" for="country-AL">Албания</label>
+                    <input class="countries-list__radio" type="radio" id="country-DZ" name="country">
+                    <label class="countries-list__name" for="country-DZ">Алжир</label>
+                    <input class="countries-list__radio" type="radio" id="country-AO" name="country">
+                    <label class="countries-list__name" for="country-AO">Ангола</label>
+                    <input class="countries-list__radio" type="radio" id="country-AD" name="country">
+                    <label class="countries-list__name" for="country-AD">Андорра</label>
+                    <input class="countries-list__radio" type="radio" id="country-AG" name="country">
+                    <label class="countries-list__name" for="country-AG">Антигуа и Барбуда</label>
+                    <input class="countries-list__radio" type="radio" id="country-AR" name="country">
+                    <label class="countries-list__name" for="country-AR">Аргентина</label>
+                    <input class="countries-list__radio" type="radio" id="country-AM" name="country">
+                    <label class="countries-list__name" for="country-AM">Армения</label>
+                  </fieldset>
+                  <button class="select-options__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                </div>
+                <button class="route-form__delete" type="button"><span class="visually-hidden">Удалить точку маршрута</span></button>
+              </div>
+              <button class="route-form__add-contry" type="button">Добавить страну</button>
+              <button class="route-form__button" type="button">Следующий</button>
+              <button class="route-form__button route-form__button--preview" type="button">На шаг назад</button>
+            </form>
+          </section>
+          <section class="plans__item plans-step">
+            <h3 class="plans-step__title">Шаг 3. <br> Развлечения</h3>
+            <p class="plans-step__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <form class="plans-step__form plans-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="plans-form__entertainment entertainment">
+                <legend class="entertainment__title entertainment__title--BA">Босния и Герцеговина</legend>
+                <textarea class="entertainment__text" placeholder="План действий" rows="10"></textarea>
+              </fieldset>
+              <fieldset class="plans-form__entertainment entertainment">
+                <legend class="entertainment__title entertainment__title--CZ">Чехия</legend>
+                <textarea class="entertainment__text" placeholder="План действий" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </fieldset>
+              <button class="plans-form__button" type="submit">Отправить</button>
+              <button class="plans-form__button plans-form__button--preview" type="button">На шаг назад</button>
+            </form>
+          </section>
+        </div>
       </div>
     </section>
   </main>

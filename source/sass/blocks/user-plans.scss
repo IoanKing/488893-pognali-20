@@ -1,0 +1,50 @@
+.user-plans {
+  color: $basic_blue_light;
+}
+
+.user-plans__wrapper {
+  padding: 28px 25px 59px;
+}
+
+.user-plans__title {
+  @include reset-indents;
+  @include font(24px, 24px, 600);
+  margin-bottom: 29px;
+}
+
+.user-plans__item {
+  background-color: $basic_white;
+  padding: 23px 23px 24px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.user-plans__route {
+  @include reset-indents;
+  @include font(16px, 16px, 600);
+  margin-bottom: 20px;
+}
+
+.user-plans__number {
+  font-weight: 500;
+}
+
+.user-plans__travelers,
+.user-plans__dates {
+  @include reset-indents;
+  @include font(14px, 14px, 500);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.user-plans__dates {
+  margin-bottom: 24px;
+}
+
+.user-plans__edit-button {
+  @include reset-button;
+  @include reset-indents;
+  @include font(14px, 14px, 500);
+  color: rgba($basic_black, 0.3);
+  text-transform: uppercase;
+}

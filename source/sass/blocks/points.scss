@@ -1,0 +1,20 @@
+.points {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.points__item {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: rgba($basic-blue-light, 0.3);
+  border-radius: 50%;
+  margin-right: 16px;
+
+  &--active {
+    background-color: $basic-blue-light;
+  }
+}
