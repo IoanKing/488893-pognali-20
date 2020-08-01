@@ -1,0 +1,70 @@
+.route-country {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.route-country__select {
+  @include font(14px, 18px);
+  display: block;
+  flex-grow: 1;
+  padding: 13px 10px;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+  color: $basic_blue_light;
+  border: 1px solid $special-border;
+  border-radius: 4px;
+  outline: hidden;
+  cursor: pointer;
+  appearance: none;
+}
+
+.route-country__value {
+  @include font(12px, 18px);
+  text-transform: none;
+}
+
+.route-form__flag {
+  display: flex;
+  margin-left: -1px;
+  padding: 9px;
+  border: 1px solid $special-border;
+  border-radius: 4px;
+}
+
+.route-form__img {
+  @include reset-indents;
+}
+
+.route-form__delete {
+  @include reset-button;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  background-color: $basic_blue_lightest;
+  border-radius: 50%;
+}
+
+.route-form__add-contry {
+  @include reset-button;
+  @include reset-link;
+  @include font(14px, 18px);
+  position: relative;
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  padding: 14px 11px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 10%;
+  background-color: $basic_blue_lightest;
+  color: $basic_blue_light;
+  border-radius: 4px;
+
+  &--preview {
+    background-color: transparent;
+  }
+}
