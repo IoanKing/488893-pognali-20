@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  &--filters {
+    justify-content: left;
+  }
 }
 
 .transports-list__item {

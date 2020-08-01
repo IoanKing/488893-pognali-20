@@ -70,9 +70,31 @@
 }
 
 .page-content__filters {
-  background-color: rgba(red, 0.2);
+  padding: 21px 25px 0;
 }
 
 .page-content__peoples {
   position: relative;
+}
+
+.page-content__user-cart {
+  position: relative;
+  margin-top: -25px;
+  z-index: 100;
+}
+
+.page-content__user-plans {
+  position: relative;
+  margin-top: -25px;
+  background-color: $special_blue_light;
+  z-index: 90;
+  border-radius: 25px 25px 0 0;
+}
+
+.page-content__plans {
+  position: relative;
+  margin-top: -25px;
+  background-color: $special-blocks;
+  z-index: 90;
+  border-radius: 25px 25px 0 0;
 }

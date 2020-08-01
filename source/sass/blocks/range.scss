@@ -1,0 +1,27 @@
+.range {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rande__levels {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $basic_white;
+  border: 1px solid $special-border;
+  border-radius: 4px;
+}
+
+.range__min,
+.range__max {
+  @include reset-button;
+  @include font(14px, 13px, 500);
+  width: 50%;
+  text-align: center;
+  padding: 11px 15px 10px;
+}
+
+.range__min {
+  position: relative;
+  margin-right: -1px;
+  border-right: 1px solid $special-border;
+}

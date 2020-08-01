@@ -1,6 +1,6 @@
 .cart-list {
-  position: relative;
   @include reset-list;
+  position: relative;
   margin-bottom: 27px;
 }
 
@@ -41,10 +41,10 @@
 }
 
 .cart-list__views {
+  @include reset-indents;
   position: absolute;
   top: 28px;
   right: 24px;
-  @include reset-indents;
   padding-left: 20px;
   font-size: 16px;
   line-height: 20px;
@@ -59,9 +59,9 @@
 }
 
 .cart-list__button {
+  @include reset-link;
   position: relative;
   display: block;
-  @include reset-link;
   padding: 18px 23px;
   background-color: $basic_yellow;
   color: $basic_blue;

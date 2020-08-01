@@ -1,0 +1,50 @@
+.calendar-block {
+  @include font(14px, 18px, 400);
+  margin-top: 27px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-block__days-week {
+  @include font(14px, 18px, 400);
+  width: 2%;
+  padding: 4px 8px;
+  color: $special_grey;
+  text-align: center;
+  vertical-align: middle;
+
+  &--weekend {
+    color: $special-calendar;
+  }
+}
+
+.calendar-block__days {
+  width: 2%;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid $special-blocks;
+}
+
+.calendar-block__checkbox {
+  @include font(14px, 18px, 400);
+  display: block;
+  padding: 4px 8px;
+  color: $basic_blue_light;
+  background-color: $basic_blue_lightest;
+
+  &--current {
+    border-color: $special-calendar;
+    outline: 2px solid $special-calendar;
+  }
+
+  .calendar-block__input:disabled + & {
+    color: rgba($special_grey, 0.3);
+    background-color: transparent;
+  }
+
+  .calendar-block__input:checked + & {
+    color: $basic_white;
+    background-color: $basic_blue_light;
+  }
+}

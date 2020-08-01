@@ -1,0 +1,19 @@
+.plans-step {
+  background-color: $basic_white;
+  padding: 24px 25px 23px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.plans-step__title {
+  @include reset-indents;
+  @include font(20px, 20px, 600);
+  margin-bottom: 20px;
+}
+
+.plans-step__description {
+  @include reset-indents;
+  @include font(16px, 22px, 400);
+  margin-bottom: 20px;
+  color: $special_grey;
+}

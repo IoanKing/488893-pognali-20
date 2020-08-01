@@ -57,7 +57,7 @@
   </header>
   <main class="page-content">
     <section class="page-content__country-filters country-filters">
-      <div class="country-filters__wrapper">
+      <div class="country-filters__wrapper container">
         <h2 class="country-filters__title">Фильтрация по странам</h2>
         <button class="country-filters__toogle" type="button"><span class="visually-hidden">Свернуть</span></button>
       </div>
@@ -191,69 +191,73 @@
         </fieldset>
       </form>
     </section>
-    <section class="page-content__filters filters">
-      <h2 class="filters__title">Подберите идеального попутчика</h2>
-      <form class="filters__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter-form__fieldset accordeon">
-          <legend>Хобби</legend>
-        </fieldset>
-        <fieldset class="filter-form__fieldset accordeon">
-          <legend>Музыка</legend>
-          <ul class="filter-form__field filter-form__field--choises accordeon__content">
-            <li>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="filter-checkbox-1">
-              <label for="filter-checkbox-1">Тяжелый рок</label>
-            </li>
-            <li>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="filter-checkbox-2">
-              <label for="filter-checkbox-2">Русский рэп</label>
-            </li>
-            <li>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="music" value="Евроденс" id="filter-checkbox-3">
-              <label for="filter-checkbox-3">Евроденс</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset accordeon">
-          <legend>Еда</legend>
-        </fieldset>
-        <fieldset class="filter-form__fieldset accordeon">
-          <legend>Транспорт</legend>
-          <ul class="filter-form__field filter-form__field--transports transports-list accordeon__content">
-            <li class="transports-list__item transports-list__item--active transports-list__item--plane">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By plane" id="filter-transport-plane" checked>
-              <label for="filter-transport-plane"><span class="visually-hidden">By plane</span></label>
-            </li>
-            <li class="transports-list__item  transports-list__item--active transports-list__item--car">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By car" id="filter-transport-car" checked>
-              <label for="filter-transport-car"><span class="visually-hidden">By car</span></label>
-            </li>
-            <li class="transports-list__item transports-list__item--bike">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By bike" id="filter-transport-bike" checked>
-              <label for="filter-transport-bike"><span class="visually-hidden">By bike</span></label>
-            </li>
-            <li class="transports-list__item  transports-list__item--active transports-list__item--foot">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="On foot" id="filter-transport-foot">
-              <label for="filter-transport-foot"><span class="visually-hidden">On foot</span></label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset filter-form__fieldset--level accordeon">
-          <legend>Левел</legend>
-          <div class="filter-form__field accordeon__content range">
-            <input class="range__min" type="number" name="min-level" value="30">
-            <input class="range__max" type="number" name="max-level" value="100">
-            <div class="range__bar range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
+    <section class="page-content__filters container">
+      <div class="filters">
+        <h2 class="filters__title">Подберите идеального попутчика</h2>
+        <form class="filters__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-form__fieldset accordeon">
+            <div class="filter-form__legend accordeon__title">Хобби</div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset accordeon">
+            <div class="filter-form__legend accordeon__title">Музыка</div>
+            <ul class="filter-form__field filter-form__field--choises filter-list accordeon__content">
+              <li class="filter-list__item">
+                <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="filter-checkbox-1">
+                <label class="filter-form__checkbox" for="filter-checkbox-1">Тяжелый рок</label>
+              </li>
+              <li class="filter-list__item">
+                <input class="visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="filter-checkbox-2">
+                <label class="filter-form__checkbox"  for="filter-checkbox-2">Русский рэп</label>
+              </li>
+              <li class="filter-list__item">
+                <input class="visually-hidden" type="checkbox" name="music" value="Евроденс" id="filter-checkbox-3">
+                <label class="filter-form__checkbox"  for="filter-checkbox-3">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset accordeon">
+            <div class="filter-form__legend accordeon__title">Еда</div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset accordeon">
+            <div class="filter-form__legend accordeon__title">Транспорт</div>
+            <ul class="filter-form__field filter-form__field--transports transports-list transports-list--filters accordeon__content">
+              <li class="transports-list__item transports-list__item--active transports-list__item--plane">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By plane" id="filter-transport-plane" checked>
+                <label for="filter-transport-plane"><span class="visually-hidden">By plane</span></label>
+              </li>
+              <li class="transports-list__item  transports-list__item--active transports-list__item--car">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By car" id="filter-transport-car" checked>
+                <label for="filter-transport-car"><span class="visually-hidden">By car</span></label>
+              </li>
+              <li class="transports-list__item transports-list__item--bike">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By bike" id="filter-transport-bike" checked>
+                <label for="filter-transport-bike"><span class="visually-hidden">By bike</span></label>
+              </li>
+              <li class="transports-list__item  transports-list__item--active transports-list__item--foot">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="On foot" id="filter-transport-foot">
+                <label for="filter-transport-foot"><span class="visually-hidden">On foot</span></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset filter-form__fieldset--level accordeon">
+            <div class="filter-form__legend accordeon__title">Левел</div>
+            <div class="filter-form__field accordeon__content range">
+              <div class="rande__levels">
+                <input class="range__min" type="number" name="min-level" value="30">
+                <input class="range__max" type="number" name="max-level" value="100">
               </div>
-              <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
-              <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+              <div class="range__bar range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
+                <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+              </div>
             </div>
-          </div>
-        </fieldset>
-        <button class="filter-form__submit" type="submit">Показать</button>
-      </form>
+          </fieldset>
+          <button class="filter-form__submit" type="submit">Показать</button>
+        </form>
+      </div>
     </section>
     <section class="page-content__peoples peoples">
       <div class="peoples__wrapper slider container">

@@ -7,9 +7,9 @@
 }
 
 .site-nav__link {
+  @include reset-link;
   font-family: $font-stack;
   font-size: 30px;
   line-height: 35px;
-  @include reset-link;
   color: $basic_blue_dark;
 }

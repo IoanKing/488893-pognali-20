@@ -15,6 +15,6 @@
 
 .rates__link {
   @include reset-link;
-  color: $special-link;
   @include font(16px, 16px, 600);
+  color: $special-link;
 }

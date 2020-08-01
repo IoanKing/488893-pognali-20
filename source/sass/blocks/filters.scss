@@ -1,0 +1,63 @@
+.filters {
+  background-color: $basic_yellow;
+  color: $basic_blue_light;
+  padding: 26px 25px 22px;
+  border-radius: 20px;
+}
+
+.filters__title {
+  @include reset-indents;
+  @include font(22px, 22px, 600);
+  letter-spacing: 0.02em;
+  margin-bottom: 23px;
+}
+
+.filter-form__fieldset {
+  @include reset-indents;
+  border: none;
+  border-top: 1px solid $special-accordion;
+  padding-bottom: 12px;
+}
+
+.filter-form__legend {
+  @include reset-indents;
+  @include font(16px, 18px, 600);
+  padding: 14px 0 12px;
+  text-transform: uppercase;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.filter-form__checkbox {
+  @include font(15px, 20px);
+  display: flex;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $basic_white;
+    border-radius: 4px;
+    margin-right: 9px;
+  }
+}
+
+.filter-form__field--transports {
+  margin: 7px 0;
+}
+
+.filter-form__submit {
+  @include reset-button;
+  @include reset-link;
+  @include font(17px, 17px, 600);
+  width: 100%;
+  padding: 14px 20px;
+  background-color: $basic_white;
+  color: $basic_blue;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
