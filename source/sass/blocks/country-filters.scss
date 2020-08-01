@@ -22,8 +22,8 @@
 }
 
 .country-filters__toogle {
-  position: relative;
   @include reset-button;
+  position: relative;
   margin-left: auto;
 
   &::before {
