@@ -10,56 +10,43 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper wrapper container">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--mobile" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--tablet" src="img/logo-tablet-white@1x.png" alt="Погнали?" width="166" height="42">
       </a>
-      <button class="page-header__nav main-nav__toggle" type="button">
+      <button class="page-header__menu-toggle main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="page-header__dropdown dropdown">
-        <nav class="page-header__nav main-nav site-nav">
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a  class="site-nav__link" href="">О сервисе</a>
-            </li>
-            <li class="site-nav__item">
-              <a  class="site-nav__link" href="form.html">Направления</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="travelers.html">Попутчики</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__auth auth">
-          <a class="auth__button button" href="">Авторизация</a>
-          <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="page-header__social">
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="page-header__main-nav">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="">О сервисе</a>
+          </li>
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="form.html">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="travelers.html">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__auth">
+        <a class="page-header__phone" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+        <a class="page-header__mail" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+        <a class="page-header__authorisation" href="">Авторизация</a>
       </div>
       <div class="page-header__title-block">
         <h1 class="page-header__title">Попутчики</h1>
+        <a class="page-header__back-link" href="index.html">На главную</a>
       </div>
     </div>
   </header>
   <main class="page-content">
     <section class="page-content__country-filters country-filters">
       <div class="country-filters__wrapper container">
-        <h2 class="country-filters__title">Фильтрация по странам</h2>
-        <button class="country-filters__toogle" type="button"><span class="visually-hidden">Свернуть</span></button>
+        <h2 class="country-filters__title">Фильтрация по странам<span class="dots">:</span></h2>
+        <button class="country-filters__toogle" type="button"><span class="country-filters__toogle-text">Показать все</span></button>
       </div>
       <form class="country-filters__form dropdown" action="https://echo.htmlacademy.ru/" method="get">
         <ul class="country-filters__region region-list">
@@ -191,279 +178,348 @@
         </fieldset>
       </form>
     </section>
-    <section class="page-content__filters container">
-      <div class="filters">
-        <h2 class="filters__title">Подберите идеального попутчика</h2>
-        <form class="filters__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-form__fieldset accordeon">
-            <div class="filter-form__legend accordeon__title">Хобби</div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset accordeon">
-            <div class="filter-form__legend accordeon__title">Музыка</div>
-            <ul class="filter-form__field filter-form__field--choises filter-list accordeon__content">
-              <li class="filter-list__item">
-                <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="filter-checkbox-1">
-                <label class="filter-form__checkbox" for="filter-checkbox-1">Тяжелый рок</label>
-              </li>
-              <li class="filter-list__item">
-                <input class="visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="filter-checkbox-2">
-                <label class="filter-form__checkbox"  for="filter-checkbox-2">Русский рэп</label>
-              </li>
-              <li class="filter-list__item">
-                <input class="visually-hidden" type="checkbox" name="music" value="Евроденс" id="filter-checkbox-3">
-                <label class="filter-form__checkbox"  for="filter-checkbox-3">Евроденс</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-form__fieldset accordeon">
-            <div class="filter-form__legend accordeon__title">Еда</div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset accordeon">
-            <div class="filter-form__legend accordeon__title">Транспорт</div>
-            <ul class="filter-form__field filter-form__field--transports transports-list transports-list--filters accordeon__content">
-              <li class="transports-list__item transports-list__item--active transports-list__item--plane">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By plane" id="filter-transport-plane" checked>
-                <label for="filter-transport-plane"><span class="visually-hidden">By plane</span></label>
-              </li>
-              <li class="transports-list__item  transports-list__item--active transports-list__item--car">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By car" id="filter-transport-car" checked>
-                <label for="filter-transport-car"><span class="visually-hidden">By car</span></label>
-              </li>
-              <li class="transports-list__item transports-list__item--bike">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By bike" id="filter-transport-bike" checked>
-                <label for="filter-transport-bike"><span class="visually-hidden">By bike</span></label>
-              </li>
-              <li class="transports-list__item  transports-list__item--active transports-list__item--foot">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="On foot" id="filter-transport-foot">
-                <label for="filter-transport-foot"><span class="visually-hidden">On foot</span></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-form__fieldset filter-form__fieldset--level accordeon">
-            <div class="filter-form__legend accordeon__title">Левел</div>
-            <div class="filter-form__field accordeon__content range">
-              <div class="rande__levels">
-                <input class="range__min" type="number" name="min-level" value="30">
-                <input class="range__max" type="number" name="max-level" value="100">
+    <div class="container page-content__sidebar">
+      <section class="page-content__filters">
+        <div class="filters">
+          <h2 class="filters__title">Подберите идеального попутчика</h2>
+          <form class="filters__form filter-form" action="https://echo.htmlacademy.ru/" method="get" id="filter-form">
+            <fieldset class="filter-form__fieldset">
+              <div class="filter-form__layout accordeon">
+                <div class="filter-form__legend accordeon__title">Хобби<span class="dots">:</span></div>
+                <ul class="filter-form__field filter-list accordeon__content accordeon__content--closed">
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="hobby-checkbox-1">
+                    <label class="filter-form__checkbox" for="hobby-checkbox-1">Спортзал</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="hobby-checkbox-2">
+                    <label class="filter-form__checkbox"  for="hobby-checkbox-2">Кальян</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Евроденс" id="hobby-checkbox-3">
+                    <label class="filter-form__checkbox"  for="hobby-checkbox-3">Диван</label>
+                  </li>
+                </ul>
               </div>
-              <div class="range__bar range-controls">
-                <div class="range-controls__scale">
-                  <div class="range-controls__bar"></div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <div class="filter-form__layout accordeon">
+                <div class="filter-form__legend accordeon__title">Музыка<span class="dots">:</span></div>
+                <ul class="filter-form__field filter-list accordeon__content">
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="filter-checkbox-1">
+                    <label class="filter-form__checkbox" for="filter-checkbox-1">Тяжелый рок</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="filter-checkbox-2">
+                    <label class="filter-form__checkbox"  for="filter-checkbox-2">Русский рэп</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Евроденс" id="filter-checkbox-3">
+                    <label class="filter-form__checkbox"  for="filter-checkbox-3">Евроденс</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <div class="filter-form__layout accordeon">
+                <div class="filter-form__legend accordeon__title">Еда<span class="dots">:</span></div>
+                <ul class="filter-form__field filter-list accordeon__content accordeon__content--closed">
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="food-checkbox-1" >
+                    <label class="filter-form__checkbox" for="food-checkbox-1">Мясоед</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Русский рэп" checked="" id="food-checkbox-2">
+                    <label class="filter-form__checkbox"  for="food-checkbox-2">Сидит на ПП</label>
+                  </li>
+                  <li class="filter-list__item">
+                    <input class="visually-hidden" type="checkbox" name="music" value="Евроденс" id="food-checkbox-3">
+                    <label class="filter-form__checkbox" for="food-checkbox-3">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <div class="filter-form__layout accordeon">
+                <div class="filter-form__legend accordeon__title">Транспорт<span class="dots">:</span></div>
+                <ul class="filter-form__field filter-form__field--transports transports-list transports-list--filters accordeon__content">
+                  <li class="transports-list__item transports-list__item--filters transports-list__item--active transports-list__item--plane">
+                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By plane" id="filter-transport-plane" checked>
+                    <label for="filter-transport-plane"><span class="visually-hidden">By plane</span></label>
+                  </li>
+                  <li class="transports-list__item transports-list__item--filters transports-list__item--active transports-list__item--car">
+                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By car" id="filter-transport-car" checked>
+                    <label for="filter-transport-car"><span class="visually-hidden">By car</span></label>
+                  </li>
+                  <li class="transports-list__item transports-list__item--filters transports-list__item--bike">
+                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="By bike" id="filter-transport-bike" checked>
+                    <label for="filter-transport-bike"><span class="visually-hidden">By bike</span></label>
+                  </li>
+                  <li class="transports-list__item transports-list__item--filters transports-list__item--active transports-list__item--foot">
+                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="transport" value="On foot" id="filter-transport-foot">
+                    <label for="filter-transport-foot"><span class="visually-hidden">On foot</span></label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset filter-form__fieldset--level">
+              <div class="filter-form__layout accordeon">
+                <div class="filter-form__legend accordeon__title">Левел<span class="dots">:</span></div>
+                <div class="filter-form__field filter-form__field--range accordeon__content range">
+                  <div class="rande__levels">
+                    <input class="range__min" type="number" name="min-level" value="30">
+                    <input class="range__max" type="number" name="max-level" value="100">
+                  </div>
+                  <div class="range__bar range-controls">
+                    <div class="range-controls__scale">
+                      <div class="range-controls__bar"></div>
+                    </div>
+                    <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
+                    <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+                  </div>
                 </div>
-                <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
-                <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+              </div>
+            </fieldset>
+          </form>
+          <button class="filter-form__submit" type="submit" for="filter-form">Показать</button>
+        </div>
+      </section>
+      <section class="page-content__peoples peoples">
+        <div class="peoples__wrapper slider">
+          <article class="slider__item people-cart">
+            <img class="people-cart__avatar people-cart__avatar--desctop" src="img/firsova-desktop@1x.jpg" alt="Аватар" width="285" height="285">
+            <div class="people-cart__user-info">
+              <img class="people-cart__avatar people-cart__avatar--tablet" src="img/firsova-tablet@1x.jpg" alt="Аватар" width="190" height="190">
+              <div class="people-cart__info">
+                <img class="people-cart__avatar people-cart__avatar--mobile" src="img/firsova-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+                <p class="people-cart__user-name">Таня Фирсова</p>
+                <div class="people-cart__likes likes">
+                  <a class="likes__button" href="">Позвать!</a>
+                  <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+                  <p class="likes__counts">1,5 М</p>
+                </div>
+                <p class="people-cart__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               </div>
             </div>
-          </fieldset>
-          <button class="filter-form__submit" type="submit">Показать</button>
-        </form>
-      </div>
-    </section>
-    <section class="page-content__peoples peoples">
-      <div class="peoples__wrapper slider container">
-        <article class="slider__item people-cart">
-          <div class="people-cart__user-info">
-            <img class="people-cart__avatar" src="../img/firsova-mobile@1x.jpg" alt="Аватар" width="70" height="70">
-            <p class="people-cart__user-name">Таня Фирсова</p>
-            <div class="people-cart__likes likes">
-              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-              <p class="likes__counts">1,5 М</p>
+            <div class="people-cart__countries">
+              <p class="people-cart__text people-cart__text--tablet">хочет посетить:</p>
+              <ul class="people-cart__cartflag cartflag-list">
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Шри-ланки">
+                  <p class="cartflag-list__title">Шри-ланка</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Тайланда">
+                  <p class="cartflag-list__title">Тайланд</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Сейшилы">
+                  <p class="cartflag-list__title">Сейшилы</p>
+                </li>
+              </ul>
             </div>
-            <p class="people-cart__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          </div>
-          <div class="people-cart__countries">
-            <p class="people-cart__text">хочет посетить:</p>
-            <ul class="people-cart__cartflag cartflag-list">
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Шри-ланки">
-                <p class="cartflag-list__title">Шри-ланка</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Тайланда">
-                <p class="cartflag-list__title">Тайланд</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Сейшилы">
-                <p class="cartflag-list__title">Сейшилы</p>
-              </li>
-            </ul>
-          </div>
-          <div class="people-cart__transports">
-            <p class="people-cart__text">транспорт:</p>
-            <ul class="transports-list">
-              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
-                  class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item transports-list__item--car"><span class="visually-hidden">By car</span></li>
-              <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
-              <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
-            </ul>
-          </div>
-          <div class="people-cart__stat">
-            <p class="people-cart__text">левел:</p>
-            <div class="people-cart__level level">
-              <span class="level__number">99</span>
+            <div class="people-cart__user-stats">
+              <div class="people-cart__transports">
+                <p class="people-cart__text">транспорт:</p>
+                <ul class="transports-list">
+                  <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
+                      class="visually-hidden">By plane</span></li>
+                  <li class="transports-list__item transports-list__item--car"><span class="visually-hidden">By car</span></li>
+                  <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
+                  <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
+                </ul>
+              </div>
+              <div class="people-cart__stat">
+                <p class="people-cart__text">левел:</p>
+                <div class="people-cart__level level">
+                  <span class="level__number">99</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="people-cart__calling">
-            <a class="people-cart__button" href="">Позвать!</a>
-          </div>
-        </article>
-        <article class="slider__item people-cart">
-          <div class="people-cart__user-info">
-            <img class="people-cart__avatar" src="../img/demin-mobile@1x.jpg" alt="Аватар" width="70" height="70">
-            <p class="people-cart__user-name">Петя Демин</p>
-            <div class="people-cart__likes likes">
-              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-              <p class="likes__counts">1500</p>
+            <div class="people-cart__calling">
+              <a class="people-cart__button" href="">Позвать!</a>
             </div>
-            <p class="people-cart__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-          </div>
-          <div class="people-cart__countries">
-            <p class="people-cart__text">хочет посетить:</p>
-            <ul class="people-cart__cartflag cartflag-list">
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Бельгии">
-                <p class="cartflag-list__title">Бельгия</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Чехии">
-                <p class="cartflag-list__title">Чехия</p>
-              </li>
-            </ul>
-          </div>
-          <div class="people-cart__transports">
-            <p class="people-cart__text">транспорт:</p>
-            <ul class="transports-list">
-              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
-                  class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item  transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
-              <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
-            </ul>
-          </div>
-          <div class="people-cart__stat">
-            <p class="people-cart__text">левел:</p>
-            <div class="people-cart__level level">
-              <span class="level__number">80</span>
+          </article>
+          <article class="slider__item people-cart">
+            <img class="people-cart__avatar people-cart__avatar--desctop" src="img/demin-desktop@1x.jpg" alt="Аватар" width="285" height="285">
+            <div class="people-cart__user-info">
+              <img class="people-cart__avatar people-cart__avatar--tablet" src="img/demin-tablet@1x.jpg" alt="Аватар" width="190" height="190">
+              <div class="people-cart__info">
+                <img class="people-cart__avatar people-cart__avatar--mobile" src="img/demin-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+                <p class="people-cart__user-name">Петя Демин</p>
+                <div class="people-cart__likes likes">
+                  <a class="likes__button" href="">Позвать!</a>
+                  <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+                  <p class="likes__counts">1500</p>
+                </div>
+                <p class="people-cart__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+              </div>
             </div>
-          </div>
-          <div class="people-cart__calling">
-            <a class="people-cart__button" href="">Позвать!</a>
-          </div>
-        </article>
-        <article class="slider__item people-cart">
-          <div class="people-cart__user-info">
-            <img class="people-cart__avatar" src="../img/smolov-mobile@1x.jpg" alt="Аватар" width="70" height="70">
-            <p class="people-cart__user-name">Марк Смолов</p>
-            <div class="people-cart__likes likes">
-              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-              <p class="likes__counts">170</p>
+            <div class="people-cart__countries">
+              <p class="people-cart__text people-cart__text--tablet">хочет посетить:</p>
+              <ul class="people-cart__cartflag cartflag-list">
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Бельгии">
+                  <p class="cartflag-list__title">Бельгия</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Чехии">
+                  <p class="cartflag-list__title">Чехия</p>
+                </li>
+              </ul>
             </div>
-            <p class="people-cart__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          </div>
-          <div class="people-cart__countries">
-            <p class="people-cart__text">хочет посетить:</p>
-            <ul class="people-cart__cartflag cartflag-list">
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг США">
-                <p class="cartflag-list__title">США</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Австралии">
-                <p class="cartflag-list__title">Австралия</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Доминиканы">
-                <p class="cartflag-list__title">Доминикана</p>
-              </li>
-            </ul>
-          </div>
-          <div class="people-cart__transports">
-            <p class="people-cart__text">транспорт:</p>
-            <ul class="transports-list">
-              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
-                  class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item transports-list__item--car"><span class="visually-hidden">By car</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
-              <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
-            </ul>
-          </div>
-          <div class="people-cart__stat">
-            <p class="people-cart__text">левел:</p>
-            <div class="people-cart__level level">
-              <span class="level__number">25</span>
+            <div class="people-cart__user-stats">
+              <div class="people-cart__transports">
+                <p class="people-cart__text">транспорт:</p>
+                <ul class="transports-list">
+                  <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
+                      class="visually-hidden">By plane</span></li>
+                  <li class="transports-list__item  transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
+                  <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
+                  <li class="transports-list__item transports-list__item--active transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
+                </ul>
+              </div>
+              <div class="people-cart__stat">
+                <p class="people-cart__text">левел:</p>
+                <div class="people-cart__level level">
+                  <span class="level__number">80</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="people-cart__calling">
-            <a class="people-cart__button" href="">Позвать!</a>
-          </div>
-        </article>
-        <article class="slider__item people-cart">
-          <div class="people-cart__user-info">
-            <img class="people-cart__avatar" src="../img/rogovaya-mobile@1x.jpg" alt="Аватар" width="70" height="70">
-            <p class="people-cart__user-name">Лариса Роговая</p>
-            <div class="people-cart__likes likes">
-              <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
-              <p class="likes__counts">23</p>
+            <div class="people-cart__calling">
+              <a class="people-cart__button" href="">Позвать!</a>
             </div>
-            <p class="people-cart__hashtags">#образование #карьера #учеба #линкедин</p>
-          </div>
-          <div class="people-cart__countries">
-            <p class="people-cart__text">хочет посетить:</p>
-            <ul class="people-cart__cartflag cartflag-list">
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Великобритании">
-                <p class="cartflag-list__title">Великобритания</p>
-              </li>
-              <li class="cartflag-list__item">
-                <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг Германии">
-                <p class="cartflag-list__title">Германия</p>
-              </li>
-            </ul>
-          </div>
-          <div class="people-cart__transports">
-            <p class="people-cart__text">транспорт:</p>
-            <ul class="transports-list">
-              <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
-                  class="visually-hidden">By plane</span></li>
-              <li class="transports-list__item transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
-              <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
-              <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
-            </ul>
-          </div>
-          <div class="people-cart__stat">
-            <p class="people-cart__text">левел:</p>
-            <div class="people-cart__level level">
-              <span class="level__number">50</span>
+          </article>
+          <article class="slider__item people-cart">
+            <img class="people-cart__avatar people-cart__avatar--desctop" src="img/smolov-desktop@1x.jpg" alt="Аватар" width="285" height="285">
+            <div class="people-cart__user-info">
+              <img class="people-cart__avatar people-cart__avatar--tablet" src="img/smolov-tablet@1x.jpg" alt="Аватар" width="190" height="190">
+              <div class="people-cart__info">
+                <img class="people-cart__avatar people-cart__avatar--mobile" src="img/smolov-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+                <p class="people-cart__user-name">Марк Смолов</p>
+                <div class="people-cart__likes likes">
+                  <a class="likes__button" href="">Позвать!</a>
+                  <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+                  <p class="likes__counts">170</p>
+                </div>
+                <p class="people-cart__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              </div>
             </div>
-          </div>
-          <div class="people-cart__calling">
-            <a class="people-cart__button" href="">Позвать!</a>
-          </div>
-        </article>
+            <div class="people-cart__countries">
+              <p class="people-cart__text people-cart__text--tablet">хочет посетить:</p>
+              <ul class="people-cart__cartflag cartflag-list">
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг США">
+                  <p class="cartflag-list__title">США</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Австралии">
+                  <p class="cartflag-list__title">Австралия</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Доминиканы">
+                  <p class="cartflag-list__title">Доминика</p>
+                </li>
+              </ul>
+            </div>
+            <div class="people-cart__user-stats">
+              <div class="people-cart__transports">
+                <p class="people-cart__text">транспорт:</p>
+                <ul class="people-cart__transports-list transports-list">
+                  <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
+                      class="visually-hidden">By plane</span></li>
+                  <li class="transports-list__item transports-list__item--car"><span class="visually-hidden">By car</span></li>
+                  <li class="transports-list__item transports-list__item--active transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
+                  <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
+                </ul>
+              </div>
+              <div class="people-cart__stat">
+                <p class="people-cart__text">левел:</p>
+                <div class="people-cart__level level">
+                  <span class="level__number">25</span>
+                </div>
+              </div>
+            </div>
+            <div class="people-cart__calling">
+              <a class="people-cart__button" href="">Позвать!</a>
+            </div>
+          </article>
+          <article class="slider__item people-cart">
+            <img class="people-cart__avatar people-cart__avatar--desctop" src="img/rogovaya-desktop@1x.jpg" alt="Аватар" width="285" height="285">
+            <div class="people-cart__user-info">
+              <img class="people-cart__avatar people-cart__avatar--tablet" src="img/rogovaya-tablet@1x.jpg" alt="Аватар" width="190" height="190">
+              <div class="people-cart__info">
+                <img class="people-cart__avatar people-cart__avatar--mobile" src="img/rogovaya-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+                <p class="people-cart__user-name">Лариса Роговая</p>
+                <div class="people-cart__likes likes">
+                  <a class="likes__button" href="">Позвать!</a>
+                  <button class="likes__icon" type="button"><span class="visually-hidden">лайк</span></button>
+                  <p class="likes__counts">23</p>
+                </div>
+                <p class="people-cart__hashtags">#образование #карьера #учеба #линкедин</p>
+              </div>
+            </div>
+            <div class="people-cart__countries">
+              <p class="people-cart__text people-cart__text--tablet">хочет посетить:</p>
+              <ul class="people-cart__cartflag cartflag-list">
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Великобритании">
+                  <p class="cartflag-list__title">Великобритания</p>
+                </li>
+                <li class="cartflag-list__item">
+                  <img class="cartflag-list__img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Германии">
+                  <p class="cartflag-list__title">Германия</p>
+                </li>
+              </ul>
+            </div>
+            <div class="people-cart__user-stats">
+              <div class="people-cart__transports">
+                <p class="people-cart__text">транспорт:</p>
+                <ul class="transports-list">
+                  <li class="transports-list__item transports-list__item--active transports-list__item--plane"><span
+                      class="visually-hidden">By plane</span></li>
+                  <li class="transports-list__item transports-list__item--active transports-list__item--car"><span class="visually-hidden">By car</span></li>
+                  <li class="transports-list__item transports-list__item--bike"><span class="visually-hidden">By bike</span></li>
+                  <li class="transports-list__item transports-list__item--foot"><span class="visually-hidden">On foot</span></li>
+                </ul>
+              </div>
+              <div class="people-cart__stat">
+                <p class="people-cart__text">левел:</p>
+                <div class="people-cart__level level">
+                  <span class="level__number">50</span>
+                </div>
+              </div>
+            </div>
+            <div class="people-cart__calling">
+              <a class="people-cart__button" href="">Позвать!</a>
+            </div>
+          </article>
 
-        <button class="slider__button" type="button">Показать еще</button>
-        <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--back slider__toggle--current" type="button"><span class="visually-hidden">Back</span></button>
-          <button class="slider__toggle slider__toggle--next" type="button"><span class="visually-hidden">Next</span></button>
+          <button class="slider__button" type="button">Показать еще</button>
+          <div class="slider__toggles">
+            <button class="slider__toggle slider__toggle--back slider__toggle--current" type="button"><span class="visually-hidden">Back</span></button>
+            <button class="slider__toggle slider__toggle--next" type="button"><span class="visually-hidden">Next</span></button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo" href="">
-        <img class="logo__img" src="../img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--mobile" src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--tablet" src="img/logo-tablet-blue@1x.png" alt="Погнали?" width="164" height="42">
       </a>
       <div class="page-footer__social">
         <ul class="social-list">
@@ -481,7 +537,7 @@
       <div class="page-footer__devs devs">
         <p class="devs__text">Разработано</p>
         <a class="devs__logo" href="">
-          <img class="devs__img" src="../img/htmlacademy.svg" alt="Логотип HTMLAcademy" width="27" height="33">
+          <img class="devs__img" src="img/htmlacademy.svg" alt="Логотип HTMLAcademy" width="27" height="33">
         </a>
       </div>
     </div>

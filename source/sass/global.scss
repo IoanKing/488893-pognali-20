@@ -6,18 +6,21 @@
 
 .container {
   position: relative;
-  width: calc(320px - 50px);
+  width: $mobile-width;
   margin: 0 auto;
+  padding: 0 25px;
 
   outline: 5px solid rgba(yellow, 0.5);
   outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding: 0 40px;
   }
 
   @media (min-width: $desctop-width) {
     width: $desctop-width;
+    padding: 0 60px;
   }
 }
 
@@ -38,4 +41,12 @@ input[type="radio"].visually-hidden {
 
 .dropdown {
   display: none;
+}
+
+.dots {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

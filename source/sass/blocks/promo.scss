@@ -8,6 +8,7 @@
 .promo__wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 39px;
 
   @media (min-width: $desctop-width) {
     grid-template-columns: 1fr 1fr;

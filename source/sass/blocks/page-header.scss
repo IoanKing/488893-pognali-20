@@ -8,12 +8,14 @@
   &--open {
     border-radius: 0 0 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .page-header__wrapper {
-  @include basic-wrapper;
   padding-top: 18px;
-  padding-bottom: 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -27,25 +29,19 @@
 
 .page-header__title-block {
   flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 120px;
+  }
 }
 
 .page-header__title {
-  @include reset-indents;
   @include title($basic_white);
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    bottom: -17px;
-    width: 100%;
-    height: 5px;
-    background-color: $special_orange;
-    border-radius: 4px;
-  }
 }
 
 .page-header__menu-toggle {
@@ -76,14 +72,26 @@
     background-color: $basic_white;
   }
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: calc(50% - 1.5px);
-    left: calc(50% - 25px / 2);
-  }
-
   @media (min-width: $desctop-width) {
     display: none;
+  }
+}
+
+.page-header__back-link {
+  @include reset-link;
+  @include font(20px, 20px, 600);
+  display: none;
+  color: $basic_white;
+  text-transform: uppercase;
+  margin-top: 6px;
+  padding-right: 60px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 32px 16px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: top;
   }
 }
 

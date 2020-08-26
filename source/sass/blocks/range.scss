@@ -9,6 +9,12 @@
   background-color: $basic_white;
   border: 1px solid $special-border;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    order: 1;
+    width: 150px;
+    margin-left: auto;
+  }
 }
 
 .range__min,
@@ -24,4 +30,47 @@
   position: relative;
   margin-right: -1px;
   border-right: 1px solid $special-border;
+}
+
+.range-controls {
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    width: 270px;
+  }
+}
+
+.range-controls__scale {
+  height: 3px;
+  background-color: rgba($basic_blue_light, 0.2);
+}
+
+.range-controls__bar {
+  position: absolute;
+  left: 30%;
+  width: 70%;
+  height: 3px;
+  background: $basic_blue_light;
+}
+
+.range-controls__toggle {
+  position: absolute;
+  top: 20px;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  background-color: $basic_blue_light;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls__toggle--min {
+  left: calc(30% - 25px / 2);
+}
+
+.range-controls__toggle--max {
+  left: calc(100% - 25px / 2);
 }

@@ -5,6 +5,29 @@
 }
 
 .logo__img {
-  width: 95px;
-  height: 15px;
+  @include reset-indents;
+
+  &--mobile {
+    display: block;
+    width: 95px;
+    height: 15px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    width: 166px;
+    height: 42px;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-right: 40px;
+    }
+  }
 }

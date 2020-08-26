@@ -5,10 +5,12 @@
 }
 
 .location__wrapper {
-  padding: 63px 0 35px;
+  padding-top: 63px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 102px 0 84px;
+    padding-top: 102px;
+    padding-bottom: 84px;
   }
 
   @media (min-width: $desctop-width) {
@@ -17,7 +19,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 114px 0 56px;
+    padding-top: 114px;
+    padding-bottom: 56px;
   }
 }
 

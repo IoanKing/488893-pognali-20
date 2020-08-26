@@ -1,11 +1,22 @@
 .filter-list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .filter-list__item {
   margin-bottom: 12px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
     margin-bottom: 0;
   }
 }

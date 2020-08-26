@@ -10,7 +10,8 @@
     <header class="page-header page-header--open">
       <div class="page-header__wrapper container">
         <a class="page-header__logo logo" href="">
-          <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+          <img class="logo__img logo__img--tablet" src="img/logo-tablet-white@1x.png" alt="Погнали?" width="166" height="42">
         </a>
         <button class="page-header__menu-toggle main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -117,8 +118,8 @@
           </div>
           <ul class="cart-list direction__list country-list">
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/thailand-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
-              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/thailand-desktop@1x.jpg" width="186" height="140" alt="Тайланд">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="img/thailand-desktop@1x.jpg" width="186" height="140" alt="Тайланд">
               <div class="cart-list__content country-list__content contry-cart">
                 <p class="cart-list__title">Тайланд</p>
                 <p class="cart-list__subtitle">Джунгли зовут!</p>
@@ -127,8 +128,8 @@
               </div>
             </li>
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
-              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/france-desktop@1x.jpg" width="186" height="140" alt="Франция">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="img/france-desktop@1x.jpg" width="186" height="140" alt="Франция">
               <div class="cart-list__content country-list__cart contry-cart">
                 <p class="cart-list__title">Франция</p>
                 <p class="cart-list__subtitle">Трэ бьен, манифик!</p>
@@ -137,8 +138,8 @@
               </div>
             </li>
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
-              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/czech-desktop@1x.jpg" width="186" height="140" alt="Чехия">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="img/czech-desktop@1x.jpg" width="186" height="140" alt="Чехия">
               <div class="cart-list__content country-list__cart contry-cart">
                 <p class="cart-list__title">Чехия</p>
                 <p class="cart-list__subtitle">Закоулки старой Европы</p>
@@ -219,26 +220,28 @@
         </div>
       </section>
       <section class="page-content__rates rates">
-        <div class="rates__wrapper container">
-          <h2 class="rates__title">Добавьте свой профиль</h2>
-          <div class="rates__avatar">
-            <img class="rates__image" src="../img/rates@1x.png" alt="аватар" width="100" height="100">
+        <div class="rates__wrapper-external container">
+          <div class="rates__wrapper">
+            <h2 class="rates__title">Добавьте свой профиль</h2>
+            <div class="rates__avatar">
+              <img class="rates__image" src="img/rates@1x.png" alt="аватар" width="100" height="100">
+            </div>
+            <ol class="rates__conditions conditions-list">
+              <li class="conditions-list__item">
+                <p class="conditions-list__description">Базовое размещение</p>
+                <p class="conditions-list__price">Бесплатно</p>
+              </li>
+              <li class="conditions-list__item">
+                <p class="conditions-list__description">Вывод на первых позициях</p>
+                <p class="conditions-list__price">99 руб./мес</p>
+              </li>
+              <li class="conditions-list__item">
+                <p class="conditions-list__description">Кастомный цвет карточки</p>
+                <p class="conditions-list__price">59 руб./мес</p>
+              </li>
+            </ol>
+            <div class="rates__button"><a class="rates__link" href="">Показать тарифы для бизнеса</a></div>
           </div>
-          <ol class="rates__conditions conditions-list">
-            <li class="conditions-list__item">
-              <p class="conditions-list__description">Базовое размещение</p>
-              <p class="conditions-list__price">Бесплатно</p>
-            </li>
-            <li class="conditions-list__item">
-              <p class="conditions-list__description">Вывод на первых позициях</p>
-              <p class="conditions-list__price">99 руб./мес</p>
-            </li>
-            <li class="conditions-list__item">
-              <p class="conditions-list__description">Кастомный цвет карточки</p>
-              <p class="conditions-list__price">59 руб./мес</p>
-            </li>
-          </ol>
-          <div class="rates__button"><a class="rates__link" href="">Показать тарифы для бизнеса</a></div>
         </div>
         <section class="rates-bussiness popup">
           <div class="rates-bussiness__wrapper container">
@@ -294,7 +297,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo logo" href="">
-          <img class="logo__img" src="../img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+          <img class="logo__img logo__img--tablet" src="img/logo-tablet-blue@1x.png" alt="Погнали?" width="164" height="42">
         </a>
         <div class="page-footer__social">
           <ul class="social-list">
@@ -312,7 +316,7 @@
         <div class="page-footer__devs devs">
           <p class="devs__text">Разработано</p>
           <a class="devs__logo" href="">
-            <img class="devs__img" src="../img/htmlacademy.svg" alt="Логотип HTMLAcademy" width="27" height="33">
+            <img class="devs__img" src="img/htmlacademy.svg" alt="Логотип HTMLAcademy" width="27" height="33">
           </a>
         </div>
       </div>

@@ -1,14 +1,13 @@
 .check-in {
   color: $basic_white;
-  padding-top: 25px;
-  padding-bottom: 28px;
 }
 
 .check-in__wrapper {
-  padding: 71px 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 110px;
+  padding-bottom: 30px;
 }
 
 .check-in__title {

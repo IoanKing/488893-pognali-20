@@ -10,8 +10,17 @@
 .page-content__promo {
   position: relative;
   background-color: $basic_blue;
-  padding-bottom: 39px;
   z-index: 70;
+}
+
+.page-content__sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: 1fr 285px;
+    grid-column-gap: 82px;
+  }
 }
 
 .page-content__about {
@@ -94,7 +103,12 @@
 }
 
 .page-content__filters {
-  padding: 21px 25px 0;
+  padding-top: 21px;
+  padding-bottom: 0;
+
+  @media (min-width: $desctop-width) {
+    order: 1;
+  }
 }
 
 .page-content__peoples {
