@@ -1,4 +1,4 @@
-.cart-list {
+.travelers-list {
   @include reset-list;
   display: grid;
   grid-template-rows: 1fr;
@@ -8,26 +8,26 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 22px 44px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin: 0 0 44px;
+    width: 50%;
   }
 }
 
-.cart-list__item {
+.travelers-list__item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desctop-width) {
-    width: 560px;
-  }
 }
 
-.cart-list__image {
+.travelers-list__image {
   border-radius: 10px 10px 0 0;
 
   &--desktop {
@@ -35,7 +35,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    order: 2;
 
     &--mobile {
       display: none;
@@ -43,12 +42,14 @@
 
     &--desktop {
       display: block;
-      border-radius: 0 10px 10px 0;
+      width: 100%;
+      height: auto;
+      border-radius: 20px 20px 0 0;
     }
   }
 }
 
-.cart-list__content {
+.travelers-list__content {
   position: relative;
   background-color: $basic-white;
   border-radius: 10px;
@@ -58,14 +59,13 @@
   z-index: 10px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
-    flex-grow: 1;
-    padding: 30px 29px 20px;
+    padding: 31px 31px 27px;
     margin-top: 0;
+    border-radius: 0 0 20px 20px;
   }
 }
 
-.cart-list__title {
+.travelers-list__title {
   @include reset-indents;
   @include font(21px, 21px, 600);
   margin-bottom: 2px;
@@ -76,7 +76,7 @@
   }
 }
 
-.cart-list__subtitle {
+.travelers-list__subtitle {
   @include reset-indents;
   @include font(18px, 18px, 500);
   color: rgba($special_grey, 0.3);
@@ -87,7 +87,7 @@
   }
 }
 
-.cart-list__views {
+.travelers-list__views {
   @include reset-indents;
   @include font(16px, 20px, 500);
   position: absolute;
@@ -105,21 +105,21 @@
   }
 }
 
-.cart-list__flag {
+.travelers-list__flag {
   position: absolute;
   left: 24px;
   top: -12px;
 
   @media (min-width: $tablet-width) {
-    width: 70px;
-    height: 47px;
+    width: 35px;
+    height: 24px;
     left: auto;
     right: -25px;
     top: 17px;
   }
 }
 
-.cart-list__button {
+.travelers-list__button {
   @include reset-link;
   @include font(18px, 18px, 600);
   position: relative;

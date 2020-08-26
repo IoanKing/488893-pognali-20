@@ -4,19 +4,15 @@
 
 .auth__button {
   @include reset-link;
+  @include font(17px, 30px, 600);
   background-color: $basic_yellow;
   color: $basic_blue;
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: bold;
 }
 
 .auth__phone,
 .auth__mail {
   @include reset-link;
+  @include font(16px, 18px, 600);
   display: block;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
   color: $basic_blue_dark;
 }

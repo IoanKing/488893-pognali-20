@@ -3,5 +3,9 @@
   @include basic-font;
   background-color: $basic_blue_lightest;
   color: $basic_blue_dark;
-  min-width: 320px;
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
 }

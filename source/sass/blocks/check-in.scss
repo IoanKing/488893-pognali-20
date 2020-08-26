@@ -5,7 +5,7 @@
 }
 
 .check-in__wrapper {
-  padding: 71px 25px 15px;
+  padding: 71px 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,11 @@
   padding-bottom: 15px;
   text-align: center;
   color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, 45px, 600);
+    padding-bottom: 59px;
+  }
 }
 
 .check-in__text {
@@ -24,11 +29,27 @@
   width: 215px;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 32px, 300);
+    width: 640px;
+    margin-bottom: 40px;
+  }
 }
 
 .check-in__link {
   @include reset-link;
   color: $basic_yellow;
+}
+
+.check-in__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  @media (min-width: $desctop-width) {
+    align-items: center;
+  }
 }
 
 .check-in__phone,
@@ -38,4 +59,15 @@
   padding-left: 61px;
   color: $basic_yellow;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 28px, 600);
+    flex-basis: 100%;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-basis: auto;
+  }
 }

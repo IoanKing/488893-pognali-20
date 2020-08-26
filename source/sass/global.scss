@@ -6,8 +6,19 @@
 
 .container {
   position: relative;
-  width: 320px;
+  width: calc(320px - 50px);
   margin: 0 auto;
+
+  outline: 5px solid rgba(yellow, 0.5);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: $desctop-width;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

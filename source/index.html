@@ -8,16 +8,34 @@
   </head>
   <body class="page">
     <header class="page-header page-header--open">
-      <div class="page-header__wrapper wrapper container">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo logo" href="">
           <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="page-header__menu-toggle main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="page-header__dropdown dropdown">
-          <nav class="page-header__nav main-nav site-nav">
-            <ul class="main-nav__list site-nav">
+        <nav class="page-header__main-nav">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="travelers.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__auth">
+          <a class="page-header__phone" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+          <a class="page-header__mail" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+          <a class="page-header__authorisation" href="">Авторизация</a>
+        </div>
+        <div class="page-header__dropdown header-dropdown">
+          <nav class="page-header__nav site-nav">
+            <ul class="site-nav">
               <li class="site-nav__item">
                 <a  class="site-nav__link" href="">О сервисе</a>
               </li>
@@ -53,7 +71,7 @@
     </header>
     <main class="page-content">
       <section class="page-content__promo promo">
-        <div class="page-content__wrapper container">
+        <div class="promo__wrapper container">
           <h2 class="promo__title">В путешествие с крутыми попутчиками!</h2>
           <div class="promo__auth auth">
             <a class="auth__button button" href="">Авторизация</a>
@@ -62,7 +80,7 @@
           </div>
           <blockquote class="promo__quote">
             <p>«Лучшее приложение, что я видел в жизни!»</p>
-            <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+            <cite>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
           </blockquote>
           <ol class="promo__actions actions-list">
             <li class="actions-list__item">
@@ -81,11 +99,12 @@
         </div>
       </section>
       <section class="page-content__about about">
-        <div class="page-content__wrapper container">
-          <div class="about__wrapper">
+        <div class="about__wrapper container">
+          <div class="about__content">
             <h2 class="about__title">О cервисе</h2>
             <p class="about__text">Любое путешествие веселее с&#160;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
             <p class="about__note"><strong>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</strong></p>
+            <a class="about__button" href="">Подробнее</a>
           </div>
         </div>
       </section>
@@ -94,10 +113,12 @@
           <div class="direction__wrapper">
             <h2 class="direction__title">Направления</h2>
             <p class="direction__text">Мы не продаем туры и&#160;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <a class="direction__button" href="">Показать все</a>
           </div>
           <ul class="cart-list direction__list country-list">
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image country-list__photo" src="../img/thailand-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/thailand-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/thailand-desktop@1x.jpg" width="186" height="140" alt="Тайланд">
               <div class="cart-list__content country-list__content contry-cart">
                 <p class="cart-list__title">Тайланд</p>
                 <p class="cart-list__subtitle">Джунгли зовут!</p>
@@ -106,7 +127,8 @@
               </div>
             </li>
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image country-list__photo" src="../img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/france-desktop@1x.jpg" width="186" height="140" alt="Франция">
               <div class="cart-list__content country-list__cart contry-cart">
                 <p class="cart-list__title">Франция</p>
                 <p class="cart-list__subtitle">Трэ бьен, манифик!</p>
@@ -115,7 +137,8 @@
               </div>
             </li>
             <li class="cart-list__item country-list__item">
-              <img class="cart-list__image country-list__photo" src="../img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+              <img class="cart-list__image cart-list__image--mobile country-list__photo" src="../img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+              <img class="cart-list__image cart-list__image--desktop country-list__photo" src="../img/czech-desktop@1x.jpg" width="186" height="140" alt="Чехия">
               <div class="cart-list__content country-list__cart contry-cart">
                 <p class="cart-list__title">Чехия</p>
                 <p class="cart-list__subtitle">Закоулки старой Европы</p>
@@ -133,11 +156,13 @@
             <h2 class="travelers__title">Попутчики</h2>
             <p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
             <p class="travelers__note">Теперь можно легко найти единомышленников!</p>
+            <a class="travelers__button" href="">Показать все</a>
           </div>
-          <ul class="cart-list travelers-list">
-            <li class="cart-list__item travelers-list__item">
-              <img class="cart-list__image travelers-list__image" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
-              <div class="cart-list__content travelers-list__content travelers-cart">
+          <ul class="travelers-list">
+            <li class="travelers-list__item">
+              <img class="travelers-list__image travelers-list__image--mobile" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
+              <img class="travelers-list__image travelers-list__image--desktop" src="https://via.placeholder.com/285x286" width="285" height="286" alt="Таня Фирсова">
+              <div class="travelers-list__content travelers-cart">
                 <p class="travelers-cart__name">Таня Фирсова</p>
                 <p class="travelers-cart__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                 <div class="travelers-cart__level level level--dark">
@@ -163,9 +188,10 @@
                 </ul>
               </div>
             </li>
-            <li class="cart-list__item travelers-list__item">
-              <img class="cart-list__image travelers-list__image" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Петя Демин">
-              <div class="cart-list__content travelers-list__content travelers-cart  travelers-cart__online">
+            <li class="travelers-list__item">
+              <img class="travelers-list__image travelers-list__image--mobile" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Петя Демин">
+              <img class="travelers-list__image travelers-list__image--desktop" src="https://via.placeholder.com/285x286" width="285" height="286" alt="Петя Демин">
+              <div class="travelers-list__content travelers-cart  travelers-cart__online">
                 <p class="travelers-cart__name">Петя Демин</p>
                 <p class="travelers-cart__hashtags">#бургер #бар #футбол #концерт #крафт</p>
                 <div class="travelers-cart__level level level--dark">
@@ -189,33 +215,33 @@
               </div>
             </li>
           </ul>
-          <a class="cart-list__button" href="">Показать все</a>
+          <a class="travelers-list__button" href="">Показать все</a>
         </div>
       </section>
       <section class="page-content__rates rates">
         <div class="rates__wrapper container">
           <h2 class="rates__title">Добавьте свой профиль</h2>
           <div class="rates__avatar">
-            <img class="rates__avatar" src="../img/rates@1x.png" alt="аватар" width="100" height="100">
+            <img class="rates__image" src="../img/rates@1x.png" alt="аватар" width="100" height="100">
           </div>
-          <dl class="rates__conditions conditions-list">
-            <div class="conditions-list__item conditions-list__item--numbered">
-              <dt class="conditions-list__description">Базовое размещение</dt>
-              <dd class="conditions-list__price">Бесплатно</dd>
-            </div>
-            <div class="conditions-list__item conditions-list__item--numbered">
-              <dt class="conditions-list__description">Вывод на первых позициях</dt>
-              <dd class="conditions-list__price">99 руб./мес</dd>
-            </div>
-            <div class="conditions-list__item conditions-list__item--numbered">
-              <dt class="conditions-list__description">Кастомный цвет карточки</dt>
-              <dd class="conditions-list__price">59 руб./мес</dd>
-            </div>
-          </dl>
-          <a class="rates__link" href="">Показать тарифы для бизнеса</a>
+          <ol class="rates__conditions conditions-list">
+            <li class="conditions-list__item">
+              <p class="conditions-list__description">Базовое размещение</p>
+              <p class="conditions-list__price">Бесплатно</p>
+            </li>
+            <li class="conditions-list__item">
+              <p class="conditions-list__description">Вывод на первых позициях</p>
+              <p class="conditions-list__price">99 руб./мес</p>
+            </li>
+            <li class="conditions-list__item">
+              <p class="conditions-list__description">Кастомный цвет карточки</p>
+              <p class="conditions-list__price">59 руб./мес</p>
+            </li>
+          </ol>
+          <div class="rates__button"><a class="rates__link" href="">Показать тарифы для бизнеса</a></div>
         </div>
         <section class="rates-bussiness popup">
-          <div class="rates-bussiness__wrapper">
+          <div class="rates-bussiness__wrapper container">
             <h3 class="rates-bussiness__title">Бизнес-тарифы</h3>
             <dl class="rates-bussiness__conditions conditions-list">
               <div class="conditions-list__item rates-bussiness__item">
@@ -242,12 +268,12 @@
       <section class="page-content__check-in check-in">
         <div class="check-in__wrapper container">
           <h2 class="check-in__title">Заинтересовались?</h2>
-          <p class="check-in__text">Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a class="check-in__link" href="">авторизуйтесь.</a></p>
+          <p class="check-in__text">Зарегистрируйтесь, это&#160;быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a class="check-in__link" href="">авторизуйтесь.</a></p>
           <form class="check-in__form" action="https://echo.htmlacademy.ru" method="post">
             <input class="check-in__input" type="email" name="email" placeholder="email@example.com">
             <button class="button check-in__submit" type="submit"><span class="visually-hidden">Отправить</span></button>
           </form>
-          <p class="check-in__text">Остались вопросы? <br>Мы с радостью на них ответим!</p>
+          <p class="check-in__text">Остались вопросы? Мы с радостью на них ответим!</p>
           <div class="check-in__contacts">
             <a class="check-in__phone" href="tel:88005558628">8 800 555-86-28</a>
             <a class="check-in__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -256,15 +282,13 @@
       </section>
       <section class="page-content__location location">
         <div class="location__wrapper container">
-          <div class="location__pisition">
-            <address class="location__address">ул. Большая Конюшенная, 19/8</address>
-            <a class="location__button" href="">Проложить маршрут</a>
-          </div>
+          <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+          <a class="location__button" href="">Проложить маршрут</a>
         </div>
-          <div class="location__map">
-            <div class="location__point"><span class="visually-hidden">Мы здесь!</span></div>
-            <img class="location__img" src="https://via.placeholder.com/320x424" width="320" height="424" alt="Карта местоположения">
-          </div>
+      </section>
+      <section class="page-content__map map">
+        <div class="map__point"><span class="visually-hidden">Мы здесь!</span></div>
+        <img class="map__img" src="https://via.placeholder.com/320x424" width="320" height="424" alt="Карта местоположения">
       </section>
     </main>
     <footer class="page-footer">

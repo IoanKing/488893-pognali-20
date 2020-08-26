@@ -2,35 +2,72 @@
   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 192px, contain;
-  background-position: 50% 100%, 0 0;
+  background-position: 50% 125px, 0 0;
+}
+
+.promo__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo__title {
   @include reset-indents;
+  @include font(30px, 40px, 600);
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  max-width: 400px;
   text-align: center;
-  font-size: 30px;
-  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include font(60px, 70px, 600);
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-column: 1;
+    margin-left: 67px;
+    text-align: left;
+  }
 }
 
 .promo__auth {
   margin-top: 245px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__quote {
   @include reset-indents;
   max-width: 170px;
   margin: 28px 25px 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 264px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: auto;
+  }
 }
 
 .promo__quote p {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 300;
+  @include font(16px, 20px, 300);
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 33px, 300);
+  }
 }
 
 .promo__quote cite {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 600;
+  @include font(16px, 22px, 600);
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    @include font(21px, 25px, 600);
+  }
 }

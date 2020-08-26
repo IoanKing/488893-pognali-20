@@ -1,20 +1,103 @@
 .rates {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   color: $special_grey;
-  padding-top: 25px;
 }
 
 .rates__wrapper {
-  padding: 37px 25px 36px 49px;
+  position: relative;
+  padding: 66px 0 36px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 107px 73px 165px 95px;
+  }
 }
 
 .rates__title {
   @include reset-indents;
   @include font(24px, 24px, 600);
+  width: 107px;
   color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, 45px, 600);
+    width: 100%;
+    margin: 30px 0 71px;
+    text-align: center;
+  }
+}
+
+.rates__avatar {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+  }
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    bottom: 225px;
+    right: 175px;
+  }
+}
+
+.rates__image {
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: $desctop-width) {
+    width: 198px;
+    height: 198px;
+  }
+}
+
+.rates__conditions {
+  margin-bottom: 32px;
+
+  @media (min-width: $desctop-width) {
+    max-width: 902px;
+  }
 }
 
 .rates__link {
   @include reset-link;
   @include font(16px, 16px, 600);
+  display: inline-block;
+  vertical-align: top;
   color: $special-link;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 600);
+    margin-left: 90px;
+    padding-top: 26px;
+    padding-bottom: 22px;
+  }
+}
+
+.rates__button {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: $special_gray_light;
+    }
+  }
 }

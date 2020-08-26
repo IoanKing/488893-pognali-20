@@ -1,0 +1,21 @@
+.main-nav {
+  @include reset-list;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  margin-right: 34px;
+}
+
+.main-nav__link {
+  @include reset-link;
+  @include font(20px, 20px, 400);
+  color: $basic_white;
+  text-transform: uppercase;
+}

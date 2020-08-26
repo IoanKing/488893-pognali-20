@@ -1,17 +1,20 @@
 .actions-list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  grid-column: 1 / -1;
 }
 
 .actions-list__item {
+  @include font(18px, 18px, 600);
   counter-increment: section;
+  width: 100%;
   position: relative;
   padding: 22px 21px 76px 24px;
   margin-top: -56px;
   border-radius: 10px;
   color: $basic_blue;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 600;
 
   &:nth-child(1) {
     background-color: $special_orange;
@@ -31,11 +34,88 @@
     padding-bottom: 24px;
   }
 
-  &::before {
+  &::after {
     content: counter(section);
     position: absolute;
     right: 21px;
     color: $basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(24px, 24px, 600);
+    width: calc(50%);
+    margin-top: 0;
+    padding: 30px 33px 22px;
+
+    &:nth-child(1) {
+      width: calc(50% + 25px);
+      border-radius: 10px 0 10px 0;
+    }
+
+    &:nth-child(3) {
+      width: calc(50% + 25px);
+      border-radius: 0 10px 0 10px;
+    }
+
+    &:nth-child(2) {
+      margin-left: -25px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:nth-child(4) {
+      margin-left: -25px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    &::after {
+      @include font(30px, 30px, 600);
+      content: counter(section);
+      position: relative;
+      display: block;
+      color: $basic-white;
+      padding-left: 24px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    @include font(24px, 24px, 600);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 30px 33px 22px;
+
+    &:nth-child(1) {
+      width: calc(25% + 35px);
+      border-radius: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-left: -35px;
+      width: calc(25% + 35px);
+      border-radius: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-left: -35px;
+      width: calc(25% + 35px);
+      border-radius: 20px;
+    }
+
+    &:nth-child(4) {
+      margin-left: -35px;
+      width: calc(25%);
+      border-radius: 20px;
+    }
+
+    &::after {
+      @include font(24px, 24px, 600);
+      content: counter(section);
+      position: relative;
+      display: block;
+      color: $basic-white;
+      padding-right: 15px;
+      margin-left: auto;
+    }
   }
 }
 
@@ -43,4 +123,9 @@
   display: inline-block;
   max-width: 143px;
   vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
 }

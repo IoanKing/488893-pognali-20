@@ -16,15 +16,13 @@
   padding-bottom: 14px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .page-header__dropdown {
   background-color: $basic_white;
   color: $special_grey;
-}
-
-.page-header__nav {
-  margin-left: auto;
 }
 
 .page-header__title-block {
@@ -47,5 +45,110 @@
     height: 5px;
     background-color: $special_orange;
     border-radius: 4px;
+  }
+}
+
+.page-header__menu-toggle {
+  @include reset-button;
+  @include reset-indents;
+  position: relative;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 0;
+    width: 25px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $basic_white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 4px);
+    right: 0;
+    width: 25px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $basic_white;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: calc(50% - 25px / 2);
+  }
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.page-header__auth {
+  margin-left: auto;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.page-header__authorisation {
+  @include reset-link;
+  @include reset-indents;
+  @include font(20px, 20px, 600);
+  display: none;
+  padding: 16px 28px 14px;
+  margin-left: auto;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  border-radius: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__main-nav {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin-right: 43px;
+    background-color: $basic_white;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+  }
+}
+
+.page-header__phone {
+  @include circle-button;
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+
+.page-header__mail {
+  @include circle-button($special_yellow_dark);
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
   }
 }

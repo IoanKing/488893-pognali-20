@@ -18,6 +18,10 @@
   position: relative;
   border-radius: 0 0 25px 25px;
   z-index: 60;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__direction {
@@ -26,6 +30,10 @@
   background-color: $basic_blue_lightest;
   border-radius: 0 0 25px 25px;
   z-index: 50;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__travelers {
@@ -37,6 +45,10 @@
   background-position: 0 0, 0 0, 0 0;
   border-radius: 0 0 25px 25px;
   z-index: 40;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__rates {
@@ -45,6 +57,10 @@
   background-color: $basic_blue_lightest;
   border-radius: 0 0 25px 25px;
   z-index: 30;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__check-in {
@@ -53,6 +69,10 @@
   background-color: $basic_blue_dark;
   border-radius: 0 0 25px 25px;
   z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__location {
@@ -67,6 +87,10 @@
   background-color: $special_gray_light;
   border-radius: 0 0 25px 25px;
   z-index: 100;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .page-content__filters {
