@@ -3,34 +3,91 @@
 }
 
 .travelers__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   padding: 71px 30px 60px 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+    margin-right: auto;
+  }
 }
 
 .travelers__wrapper-external {
-  padding: 0 25px 34px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 34px;
   border-radius: 0 0 25px 25px;
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    padding-top: 130px;
+    padding-bottom: 69px;
+  }
 }
 
 .travelers__title {
   @include reset-indents;
+  @include font(24px, 24px, 600);
   margin-bottom: 16px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
   color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, 45px, 600);
+    margin-bottom: 55px;
+  }
 }
 
 .travelers__text {
   @include reset-indents;
+  @include font(16px, 22px, 300);
   margin-bottom: 25px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 34px, 300);
+    margin-bottom: 39px;
+  }
 }
 
 .travelers__note {
   @include reset-indents;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 600;
+  @include font(16px, 22px, 600);
+
+  @media (min-width: $tablet-width) {
+    @include font(21px, 24px, 600);
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 85px;
+  }
 }
+
+.travelers__button {
+  @include reset-link;
+  @include font(24px, 24px, 600);
+  position: relative;
+  display: none;
+  width: 275px;
+  padding: 29px 32px 27px;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  border-radius: 20px;
+  text-transform: normal;
+
+  &::after {
+    position: absolute;
+    right: 24px;
+    content: "\25BA";
+  }
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+

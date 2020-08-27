@@ -10,22 +10,70 @@
   @include font(22px, 22px, 600);
   letter-spacing: 0.02em;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    @include font(30px, 30px, 600);
+    margin-bottom: 35px;
+  }
+}
+
+.filters__form {
+  border: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    padding-top: 30px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
+    border-top: 1px solid $special-accordion;
+    border-bottom: 1px solid $special-accordion;
+  }
 }
 
 .filter-form__fieldset {
   @include reset-indents;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border: none;
   border-top: 1px solid $special-accordion;
-  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    border: none;
+  }
+}
+
+.filter-form__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+  }
 }
 
 .filter-form__legend {
   @include reset-indents;
   @include font(16px, 18px, 600);
-  padding: 14px 0 12px;
+  padding-top: 14px;
+  padding-bottom: 12px;
   text-transform: uppercase;
+  flex-basis: 100%;
 
   &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    flex-basis: auto;
+  }
+}
+
+.filter-form__field {
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
     padding-bottom: 0;
   }
 }
@@ -42,6 +90,15 @@
     background-color: $basic_white;
     border-radius: 4px;
     margin-right: 9px;
+
+    @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    @include font(20px, 20px);
   }
 }
 

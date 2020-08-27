@@ -3,27 +3,83 @@
   color: $special_grey;
 }
 
-.direction__wrapper {
-  padding: 71px 48px 60px 22px;
+.direction__wrapper-external {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 34px;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 71px;
+    background-size: 288px;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    padding: 161px 71px 138px;
+    background-position: calc(100% - 60px) 88px;
+  }
 }
 
-.direction__wrapper-external {
-  padding: 0 25px 34px;
-  border-radius: 0 0 25px 25px;
+.direction__wrapper {
+  padding: 71px 48px 60px 22px;
+
+  @media (min-width: $desctop-width) {
+    order: 2;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 140px;
+  }
 }
 
 .direction__title {
   @include reset-indents;
+  @include font(24px, 24px, 600);
   margin-bottom: 19px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
   color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, 45px, 600);
+    margin-bottom: 57px;
+  }
 }
 
 .direction__text {
   @include reset-indents;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
+  @include font(16px, 22px, 300);
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 33px, 300);
+    width: 350px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 98px;
+  }
+}
+
+.direction__button {
+  @include reset-link;
+  @include font(24px, 24px, 600);
+  position: relative;
+  display: none;
+  width: 275px;
+  padding: 29px 32px 27px;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  border-radius: 20px;
+  text-transform: normal;
+
+  &::after {
+    position: absolute;
+    right: 24px;
+    content: "\25BA";
+  }
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
 }

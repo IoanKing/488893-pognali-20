@@ -5,6 +5,15 @@
   align-items: center;
 }
 
+.devs__logo {
+  display: flex;
+  align-items: center;
+}
+
 .devs__text {
   @include font();
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }

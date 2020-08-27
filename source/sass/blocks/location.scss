@@ -1,11 +1,27 @@
 .location {
   color: $basic_blue_light;
+  background-color: $basic_yellow;
+  border-radius: 0 0 25px 25px;
 }
 
 .location__wrapper {
-  padding: 63px 25px 35px;
-  border-radius: 0 0 25px 25px;
-  background-color: $basic_yellow;
+  padding-top: 63px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 114px;
+    padding-bottom: 56px;
+  }
 }
 
 .location__address {
@@ -16,6 +32,18 @@
   font-style: normal;
   color: $basic_blue_dark;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 28px, 600);
+    width: auto;
+    padding-left: 94px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .location__button {
@@ -23,7 +51,7 @@
   @include font(18px, 18px, 600);
   position: relative;
   display: block;
-  padding: 15px 20px;
+  padding: 15px 64px 15px 20px;
   background-color: $basic_yellow;
   color: $basic_blue;
   border-radius: 10px;
@@ -35,8 +63,10 @@
     right: 24px;
     content: "\25BA";
   }
-}
 
-.location__map {
-  margin-top: -25px;
+  @media (min-width: $tablet-width) {
+    @include font(24px, 24px, 600);
+    margin-left: 35px;
+    margin-right: 35px;
+  }
 }

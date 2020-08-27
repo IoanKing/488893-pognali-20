@@ -1,0 +1,13 @@
+@media (max-width: $tablet-width - 1) {
+  .accordeon__content--closed {
+    display: none;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .accordeon__content--closed {
+    display: none;
+    padding-bottom: 0;
+  }
+}

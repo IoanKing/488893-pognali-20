@@ -11,10 +11,37 @@
   margin-right: 7px;
   background-color: $special_gray_light;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .likes__counts {
   @include reset-indents;
   @include font(14px, 16px, 600);
   color: $basic_blue;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 600);
+  }
+}
+
+.likes__button {
+  @include reset-link;
+  @include font(17px, 17px, 600);
+  position: relative;
+  display: none;
+  padding: 14px 20px;
+  background-color: $basic_yellow;
+  color: $basic_blue;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 16px 20px 17px;
+  }
 }

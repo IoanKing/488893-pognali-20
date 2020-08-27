@@ -1,11 +1,21 @@
+.slider {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-row-gap: 39px;
+  }
+}
+
 .slider__button {
   @include reset-button;
   @include font(17px, 30px, 600);
   color: $basic_blue_light;
   text-transform: uppercase;
   display: block;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  width: 190px;
+  margin: 18px auto;
   text-align: center;
   padding-left: 33px;
 
@@ -13,6 +23,11 @@
   background-position: 0 center;
   background-size: 18px;
   background-image: url("../../img/show-more-plus.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .slider__toggles {

@@ -4,7 +4,8 @@
 }
 
 .country-filters__wrapper {
-  padding: 33px 25px 17px;
+  padding-top: 33px;
+  padding-bottom: 17px;
   display: flex;
   align-items: center;
 }
@@ -19,21 +20,56 @@
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.country-filters__title-dots {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .country-filters__toogle {
-  position: relative;
   @include reset-button;
+  @include font(20px, 20px, 600);
+  position: relative;
   margin-left: auto;
 
-  &::before {
+  &::after {
     content: "";
-    display: block;
-    width: 17px;
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
     height: 17px;
     background-image: url("../../img/dots.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 30px;
+    }
+  }
+}
+
+.country-filters__toogle-text {
+  display: none;
+  margin-right: 20px;
+  color: $basic_blue_dark;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: top;
   }
 }

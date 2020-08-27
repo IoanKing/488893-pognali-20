@@ -1,6 +1,12 @@
 .cartflag-list {
   @include reset-list;
   width: 100%;
+
+  @media (min-width: $tablet-width) and (max-width: $desctop-width - 1) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .cartflag-list__item {
@@ -15,10 +21,27 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .cartflag-list__img {
   margin-right: 14px;
+  width: 26px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
+    margin-right: 12px;
+  }
 }
 
 .cartflag-list__title {
@@ -26,4 +49,8 @@
   @include font(15px, 16px, 500);
   text-transform: uppercase;
   color: $basic_blue_light;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 500);
+  }
 }
