@@ -25,7 +25,7 @@
 
 .page-content__about {
   position: relative;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 60;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
   position: relative;
   margin-top: -25px;
   background-color: $basic_blue_lightest;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 50;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
   background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-mobile@1x.jpg"), url("../../img/rogovaya-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0 0, 0 0, 0 0;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 40;
 
   @media (min-width: $tablet-width) {
@@ -64,7 +64,7 @@
   position: relative;
   margin-top: -25px;
   background-color: $basic_blue_lightest;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 30;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
   position: relative;
   margin-top: -25px;
   background-color: $basic_blue_dark;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 20;
 
   @media (min-width: $tablet-width) {
@@ -94,7 +94,7 @@
   position: relative;
   margin-top: -25px;
   background-color: $special_gray_light;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   z-index: 100;
 
   @media (min-width: $tablet-width) {

@@ -10,9 +10,6 @@
   margin: 0 auto;
   padding: 0 25px;
 
-  outline: 5px solid rgba(yellow, 0.5);
-  outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 40px;

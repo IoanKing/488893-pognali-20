@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
   grid-row-gap: 11px;
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0 22px 44px;
@@ -52,8 +52,8 @@
   position: relative;
   background-color: $basic-white;
   border-radius: 10px;
-  margin-top: -20px;
-  padding: 26px 24px 24px;
+  margin-top: -11px;
+  padding: 24px 24px 24px;
   color: $basic_black;
   z-index: 10px;
 
@@ -78,7 +78,7 @@
 
 .cart-list__subtitle {
   @include reset-indents;
-  @include font(18px, 18px, 500);
+  @include font(16px, 18px, 500);
   color: rgba($special_grey, 0.3);
 
   @media (min-width: $tablet-width) {
@@ -124,7 +124,7 @@
   @include font(18px, 18px, 600);
   position: relative;
   display: block;
-  padding: 18px 23px;
+  padding: 22px 23px;
   background-color: $basic_yellow;
   color: $basic_blue;
   border-radius: 10px;
@@ -132,7 +132,7 @@
 
   &::after {
     position: absolute;
-    right: 24px;
+    right: 22px;
     content: "\25BA";
   }
 

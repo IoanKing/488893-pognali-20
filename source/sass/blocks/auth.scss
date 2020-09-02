@@ -4,15 +4,43 @@
 
 .auth__button {
   @include reset-link;
-  @include font(17px, 30px, 600);
+  @include font(20px, 20px, 600);
+  flex-grow: 1;
+  display: inline-block;
+  padding: 10px 28px 10px;
   background-color: $basic_yellow;
   color: $basic_blue;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
 }
 
-.auth__phone,
+.auth__phone {
+  @include reset-link;
+  @include circle-button($special_orange, 40px);
+  display: block;
+  background-image: url("../../img/topmenu-phone.svg");
+  background-size: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
 .auth__mail {
   @include reset-link;
-  @include font(16px, 18px, 600);
+  @include circle-button($special_yellow_dark, 40px);
   display: block;
-  color: $basic_blue_dark;
+  background-image: url("../../img/topmenu-mail.svg");
+  background-size: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
 }

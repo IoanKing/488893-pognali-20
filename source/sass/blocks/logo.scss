@@ -9,8 +9,8 @@
 
   &--mobile {
     display: block;
-    width: 95px;
-    height: 15px;
+    width: 100px;
+    height: 18px;
 
     @media (min-width: $tablet-width) {
       display: none;

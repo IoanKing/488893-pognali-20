@@ -25,7 +25,7 @@
 }
 
 .direction__wrapper {
-  padding: 71px 48px 60px 22px;
+  padding: 95px 48px 62px 24px;
 
   @media (min-width: $desctop-width) {
     order: 2;
@@ -38,7 +38,7 @@
 .direction__title {
   @include reset-indents;
   @include font(24px, 24px, 600);
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: $special_orange;
 
   @media (min-width: $tablet-width) {
