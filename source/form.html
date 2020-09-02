@@ -10,45 +10,31 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper wrapper container">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--mobile" src="img/logo-mobile-white@1x.png" alt="Погнали?" width="96" height="15">
+        <img class="logo__img logo__img--tablet" src="img/logo-tablet-white@1x.png" alt="Погнали?" width="166" height="42">
       </a>
-      <button class="page-header__nav main-nav__toggle" type="button">
+      <button class="page-header__menu-toggle main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="page-header__dropdown dropdown">
-        <nav class="page-header__nav main-nav site-nav">
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a  class="site-nav__link" href="">О сервисе</a>
-            </li>
-            <li class="site-nav__item">
-              <a  class="site-nav__link" href="form.html">Направления</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="travelers.html">Попутчики</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__auth auth">
-          <a class="auth__button button" href="">Авторизация</a>
-          <a class="auth__phone" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="auth__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="page-header__social">
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="">Facebook</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk"  href="">Vkontakte</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--instagram" href="">Instagram</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="page-header__main-nav">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="index.html">О сервисе</a>
+          </li>
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="#">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="travelers.html">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__auth">
+        <a class="page-header__phone" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+        <a class="page-header__mail" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+        <a class="page-header__authorisation" href="">Авторизация</a>
       </div>
       <div class="page-header__title-block">
         <h1 class="page-header__title">Направления</h1>
@@ -59,38 +45,42 @@
     <section class="page-content__user-cart user-cart container">
       <div class="user-cart__wrapper">
         <div class="user-cart__level level">
-          <span class="level__number">99</span>
-          <span class="level__text">level</span>
+          <span class="level__number level__number--form">80</span>
+          <span class="level__text level__text--form">level</span>
         </div>
         <div class="user-cart__user">
-          <img class="user-cart__avatar" src="img/demin-mobile@1x.jpg" alt="Аватар" width="70" height="70">
+          <img class="user-cart__avatar user-cart__avatar--mobile" src="img/demin-mobile@1x.jpg" alt="Аватар" width="100" height="100">
+          <img class="user-cart__avatar user-cart__avatar--tablet" src="img/demin-tablet@1x.jpg" alt="Аватар" width="94" height="94">
+          <img class="user-cart__avatar user-cart__avatar--desctop" src="img/demin-desktop@1x.jpg" alt="Аватар" width="190" height="190">
         </div>
         <form class="user-cart__add-photo" action="https://echo.htmlacademy.ru/" method="get">
           <label class="user-cart__button" for="file">Сменить фото</label>
           <input class="calendar-block__input visually-hidden" type="file" id="file">
         </form>
-        <form class="user-cart__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="user-cart__fieldset user-cart__hashtags">
-            <legend class="user-cart__legend">Теги</legend>
+        <form class="user-cart__hashtags" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="user-cart__fieldset">
+            <p class="user-cart__legend">Теги</p>
             <textarea class="user-cart__textarea" rows="2" >#бургер #бар #футбол #концерт #крафт</textarea>
-          </fieldset>
-          <fieldset class="user-cart__fieldset user-cart__transports">
-            <legend class="user-cart__legend">Транспорт</legend>
-            <div class="transports-list">
-              <input class="transports-list__item transports-list__item--active transports-list__item--plane"
+          </div>
+        </form>
+        <form class="user-cart__transports" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="user-cart__fieldset user-cart__transports">
+            <p class="user-cart__legend">Транспорт</p>
+            <div class="transports-list  transports-list--form">
+              <input class="transports-list__item transports-list--filters transports-list__item--active transports-list__item--plane"
                 type="checkbox" name="transport-plane" id="transport-plane">
               <label class="visually-hidden" for="transport-plane">plane</label>
-              <input class="transports-list__item transports-list__item--car" type="checkbox" name="transport-car"
+              <input class="transports-list__item transports-list--filters transports-list__item--car" type="checkbox" name="transport-car"
                 id="transport-car">
               <label class="visually-hidden" for="transport-car">car</label>
-              <input class="transports-list__item transports-list__item--bike" type="checkbox" name="transport-bike"
+              <input class="transports-list__item transports-list--filters transports-list__item--bike" type="checkbox" name="transport-bike"
                 id="transport-bike">
               <label class="visually-hidden" for="transport-bike">bike</label>
-              <input class="transports-list__item transports-list__item--foot" type="checkbox" name="transport-foot"
+              <input class="transports-list__item transports-list--filters transports-list__item--foot" type="checkbox" name="transport-foot"
                 id="transport-foot">
               <label class="visually-hidden" for="transport-foot">foot</label>
             </div>
-          </fieldset>
+          </div>
         </form>
       </div>
     </section>
@@ -99,15 +89,19 @@
         <h2 class="user-plans__title">Мои планы:</h2>
         <div class="user-plans__item">
           <p class="user-plans__route"><span class="user-plans__number">1.</span> Франция, Италия</p>
-          <p class="user-plans__travelers">3 попутчика</p>
-          <p class="user-plans__dates"><time datetime="2019-03-26 08:00">26 мар</time> — <time datetime="2019-03-29 23:59">29 мар</time></p>
-          <button class="user-plans__edit-button" type="button">Изменить</button>
+          <div class="user-plans__info">
+            <p class="user-plans__travelers">3 попутчика</p>
+            <p class="user-plans__dates"><time datetime="2019-03-26 08:00">26 мар</time> — <time datetime="2019-03-29 23:59">29 мар</time></p>
+            <button class="user-plans__edit-button" type="button">Изменить</button>
+          </div>
         </div>
         <div class="user-plans__item">
           <p class="user-plans__route"><span class="user-plans__number">2.</span> Тайланд, Индонезия</p>
-          <p class="user-plans__travelers">1 попутчик</p>
-          <p class="user-plans__dates"><time datetime="2019-07-01 08:00">1 июл</time> — <time datetime="2019-07-15 23:59">15 июл</time></p>
-          <button class="user-plans__edit-button" type="button">Изменить</button>
+          <div class="user-plans__info">
+            <p class="user-plans__travelers">1 попутчик</p>
+            <p class="user-plans__dates"><time datetime="2019-07-01 08:00">1 июл</time> — <time datetime="2019-07-15 23:59">15 июл</time></p>
+            <button class="user-plans__edit-button" type="button">Изменить</button>
+          </div>
         </div>
       </div>
     </section>
@@ -141,17 +135,16 @@
                   <p class="calendar__month-current">Март 2019</p>
                   <button class="calendar__month-next"><span class="visually-hidden">Вперед</span></button>
                 </div>
-                <table class="plans-form__calandar calendar-block" cellpadding
-=0 cellspacing=0>
+                <table class="plans-form__calandar calendar-block" cellpadding=0 cellspacing=0>
                   <thead class="calendar-block__head">
                     <tr>
-                      <th class="calendar-block__days-week">П</th>
-                      <th class="calendar-block__days-week">В</th>
-                      <th class="calendar-block__days-week">С</th>
-                      <th class="calendar-block__days-week">Ч</th>
-                      <th class="calendar-block__days-week">П</th>
-                      <th class="calendar-block__days-week calendar-block__days-week--weekend">С</th>
-                      <th class="calendar-block__days-week calendar-block__days-week--weekend">В</th>
+                      <th class="calendar-block__days-week">П<span class="calendar-block__suffix">н</span></th>
+                      <th class="calendar-block__days-week">В<span class="calendar-block__suffix">т</span></th>
+                      <th class="calendar-block__days-week">С<span class="calendar-block__suffix">р</span></th>
+                      <th class="calendar-block__days-week">Ч<span class="calendar-block__suffix">т</span></th>
+                      <th class="calendar-block__days-week">П<span class="calendar-block__suffix">т</span></th>
+                      <th class="calendar-block__days-week calendar-block__days-week--weekend">С<span class="calendar-block__suffix">б</span></th>
+                      <th class="calendar-block__days-week calendar-block__days-week--weekend">В<span class="calendar-block__suffix">с</span></th>
                     </tr>
                   </thead>
                   <tbody class="calendar-block__body">
@@ -296,7 +289,7 @@
                   </tbody>
                 </table>
               </fieldset>
-              <button class="plans-form__button button" type="button">Следующий шаг</button>
+              <button class="plans-form__button" type="button">Следующий шаг</button>
             </form>
           </section>
           <section class="slider__item plans-step">

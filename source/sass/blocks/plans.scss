@@ -4,12 +4,21 @@
 
 .plans__wrapper {
   padding: 28px 25px 59px;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 34px 63px;
+  }
 }
 
 .plans__title {
   @include reset-indents;
   @include font(24px, 24px, 600);
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    @include font(36px, 36px, 600);
+    margin-bottom: 56px;
+  }
 }
 
 .plans__item {

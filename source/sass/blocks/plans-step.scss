@@ -3,17 +3,31 @@
   padding: 24px 25px 23px;
   border-radius: 10px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 43px 56px;
+  }
 }
 
 .plans-step__title {
   @include reset-indents;
   @include font(20px, 20px, 600);
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font(36px, 36px, 600);
+    margin-bottom: 30px;
+  }
 }
 
 .plans-step__description {
   @include reset-indents;
-  @include font(16px, 22px, 400);
-  margin-bottom: 20px;
+  @include font(16px, 22px);
+  padding-bottom: 20px;
   color: $special_grey;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 24px);
+    padding-bottom: 34px;
+  }
 }

@@ -17,6 +17,18 @@
   &--weekend {
     color: $special-calendar;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 18px);
+  }
+}
+
+.calendar-block__suffix {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .calendar-block__days {
@@ -27,8 +39,10 @@
 }
 
 .calendar-block__checkbox {
-  @include font(14px, 18px, 400);
-  display: block;
+  @include font(14px, 18px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4px 8px;
   color: $basic_blue_light;
   background-color: $basic_blue_lightest;
@@ -46,5 +60,10 @@
   .calendar-block__input:checked + & {
     color: $basic_white;
     background-color: $basic_blue_light;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px);
+    height: 69px;
   }
 }
